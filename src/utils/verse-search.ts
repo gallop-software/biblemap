@@ -64,7 +64,7 @@ export function parseVerseQuery(query: string): VerseMatch[] {
   const q = query.trim().toLowerCase();
   if (!q) return [];
 
-  const refMatch = q.match(/^(\d?\s*[a-z]+)\s*(\d+)?(?:\s*[:\.]\s*(\d+))?$/);
+  const refMatch = q.match(/^(\d?\s*[a-z]+)\s*(\d+)?(?:\s*[:\.]\s*(\d+)?)?$/);
   if (refMatch) {
     const bookPart = refMatch[1].replace(/\s+/g, ' ').trim();
     const chapterStr = refMatch[2];

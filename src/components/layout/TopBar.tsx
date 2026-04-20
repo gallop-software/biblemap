@@ -2,12 +2,7 @@ import { useUIStore } from '../../stores/ui-store';
 import { SearchBar } from '../search/SearchBar';
 import { NavigationControls } from '../navigation/NavigationControls';
 
-interface TopBarProps {
-  isAutoPlaying: boolean;
-  onToggleAutoPlay: () => void;
-}
-
-export function TopBar({ isAutoPlaying, onToggleAutoPlay }: TopBarProps) {
+export function TopBar() {
   const toggleTextPanel = useUIStore(s => s.toggleTextPanel);
 
   return (
@@ -16,26 +11,6 @@ export function TopBar({ isAutoPlaying, onToggleAutoPlay }: TopBarProps) {
       <SearchBar />
       <div className="ml-auto flex items-center gap-2">
         <NavigationControls />
-        <button
-          onClick={onToggleAutoPlay}
-          className={`px-2.5 py-1 rounded text-xs font-medium transition-colors shrink-0 ${
-            isAutoPlaying
-              ? 'bg-amber-600 text-white'
-              : 'text-gray-400 hover:text-white hover:bg-white/10'
-          }`}
-          title="Auto-play (Space)"
-        >
-          {isAutoPlaying ? (
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-              <rect x="2" y="1" width="3" height="10" rx="0.5" />
-              <rect x="7" y="1" width="3" height="10" rx="0.5" />
-            </svg>
-          ) : (
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-              <path d="M2 1.5v9l8.5-4.5L2 1.5z" />
-            </svg>
-          )}
-        </button>
         <button
           onClick={toggleTextPanel}
           className="text-white/70 hover:text-white p-1.5 rounded hover:bg-white/10 transition-colors text-xs"

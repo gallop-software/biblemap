@@ -6,6 +6,21 @@ import { usePlaces } from '../../hooks/use-places';
 import { parseVerseQuery, type VerseMatch } from '../../utils/verse-search';
 import { BOOK_BY_ID } from '../../data/book-metadata';
 
+function BookName({ book }: { book: import('../../types/bible').BookMeta }) {
+  const abbrev = book.abbrev;
+  const name = book.name;
+  let boldLen = 0;
+  if (name.toLowerCase().startsWith(abbrev.toLowerCase())) {
+    boldLen = abbrev.length;
+  } else {
+    while (boldLen < abbrev.length && boldLen < name.length &&
+           abbrev[boldLen].toLowerCase() === name[boldLen].toLowerCase()) {
+      boldLen++;
+    }
+  }
+  return <><strong>{name.slice(0, boldLen)}</strong>{name.slice(boldLen)}</>;
+}
+
 export function SearchBar() {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +38,7 @@ export function SearchBar() {
   const currentVerse = useVerseStore(s => s.currentVerse);
   const book = BOOK_BY_ID[currentBook];
   const currentRef = book
-    ? `${book.name} ${currentChapter}:${currentVerse}`
+    ? `${book.abbrev} ${currentChapter}:${currentVerse}`
     : '';
 
   const verseMatches = useMemo(() => parseVerseQuery(query), [query]);
@@ -197,7 +212,7 @@ export function SearchBar() {
                     }`}
                   >
                     <span className="text-amber-500 text-xs font-mono w-5 text-center">{match.verse}</span>
-                    <span className="text-sm">{match.display}</span>
+                    <span className="text-sm"><BookName book={match.book} /> {match.chapter}:{match.verse}</span>
                   </button>
                 );
               })}

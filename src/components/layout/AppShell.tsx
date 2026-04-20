@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { TopBar } from './TopBar';
 import { BottomBar } from './BottomBar';
 import { MapContainer } from '../map/MapContainer';
@@ -31,9 +31,6 @@ export function AppShell() {
   const { animate, cancel } = useRouteAnimation();
   const [routeAnimState, setRouteAnimState] = useState<RouteAnimationState | null>(null);
   const [fullRouteCoords, setFullRouteCoords] = useState<[number, number][] | null>(null);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
-  const autoPlayRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const autoPlayActiveRef = useRef(false);
   const prevLocationRef = useRef<string | null>(null);
 
   useEffect(() => {
@@ -52,36 +49,6 @@ export function AppShell() {
     }
   }, [currentBook, currentChapter, currentVerse, periods, setYearAndLoad]);
 
-  const clearAutoPlayTimer = useCallback(() => {
-    if (autoPlayRef.current !== null) {
-      clearTimeout(autoPlayRef.current);
-      autoPlayRef.current = null;
-    }
-  }, []);
-
-  const scheduleNextVerse = useCallback((delay: number = 3000) => {
-    clearAutoPlayTimer();
-    if (!autoPlayActiveRef.current) return;
-    autoPlayRef.current = setTimeout(() => {
-      if (autoPlayActiveRef.current) {
-        useVerseStore.getState().nextVerse();
-      }
-    }, delay);
-  }, [clearAutoPlayTimer]);
-
-  const toggleAutoPlay = useCallback(() => {
-    setIsAutoPlaying(prev => {
-      const next = !prev;
-      autoPlayActiveRef.current = next;
-      if (next) {
-        scheduleNextVerse(1500);
-      } else {
-        clearAutoPlayTimer();
-      }
-      return next;
-    });
-  }, [scheduleNextVerse, clearAutoPlayTimer]);
-
   useEffect(() => {
     if (!currentLocation || !places) return;
 
@@ -92,7 +59,6 @@ export function AppShell() {
         : null;
 
     if (locationKey && locationKey === prevLocationRef.current) {
-      if (autoPlayActiveRef.current) scheduleNextVerse();
       return;
     }
     prevLocationRef.current = locationKey;
@@ -110,7 +76,6 @@ export function AppShell() {
           bearing: currentLocation.bearing,
         });
       }
-      if (autoPlayActiveRef.current) scheduleNextVerse();
     } else if (currentLocation.type === 'route' && mapRef) {
       const routeLocation = currentLocation as VerseLocationRoute;
       const coords: [number, number][] = [];
@@ -125,19 +90,16 @@ export function AppShell() {
         places,
         mapRef,
         (state) => setRouteAnimState({ ...state }),
-        () => {
-          if (autoPlayActiveRef.current) scheduleNextVerse(1500);
-        },
+        () => {},
       );
     }
-  }, [currentLocation, places, flyToPlace, mapRef, animate, cancel, scheduleNextVerse]);
+  }, [currentLocation, places, flyToPlace, mapRef, animate, cancel]);
 
   useEffect(() => {
     return () => {
-      clearAutoPlayTimer();
       cancel();
     };
-  }, [clearAutoPlayTimer, cancel]);
+  }, [cancel]);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -167,19 +129,17 @@ export function AppShell() {
           if (routeAnimState?.isAnimating) {
             cancel();
             setRouteAnimState(null);
-          } else {
-            toggleAutoPlay();
           }
           break;
       }
     }
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [routeAnimState, cancel, toggleAutoPlay]);
+  }, [routeAnimState, cancel]);
 
   return (
     <div className="flex flex-col h-screen w-screen bg-gray-950">
-      <TopBar isAutoPlaying={isAutoPlaying} onToggleAutoPlay={toggleAutoPlay} />
+      <TopBar />
       <div className="flex flex-1 min-h-0">
         <div className="flex-1 min-w-0">
           <MapContainer
