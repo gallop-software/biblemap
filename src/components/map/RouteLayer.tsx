@@ -13,7 +13,7 @@ const routeLineStyle: LineLayerSpecification = {
   type: 'line',
   source: 'route-drawn',
   paint: {
-    'line-color': '#F59E0B',
+    'line-color': '#3B82F6',
     'line-width': 4,
     'line-opacity': 0.9,
   },
@@ -28,7 +28,7 @@ const routeLineBgStyle: LineLayerSpecification = {
   type: 'line',
   source: 'route-full',
   paint: {
-    'line-color': '#F59E0B',
+    'line-color': '#3B82F6',
     'line-width': 2,
     'line-opacity': 0.25,
     'line-dasharray': [2, 4],
@@ -45,7 +45,7 @@ const waypointStyle: CircleLayerSpecification = {
   source: 'route-waypoints',
   paint: {
     'circle-radius': 6,
-    'circle-color': '#F59E0B',
+    'circle-color': '#3B82F6',
     'circle-stroke-color': '#FFFFFF',
     'circle-stroke-width': 2,
   },

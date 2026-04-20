@@ -21,8 +21,11 @@ export function AppShell() {
   const places = usePlaces();
   const loadChapterData = useVerseStore(s => s.loadChapterData);
   const currentBook = useVerseStore(s => s.currentBook);
+  const currentChapter = useVerseStore(s => s.currentChapter);
+  const currentVerse = useVerseStore(s => s.currentVerse);
   const initPeriods = usePeriodStore(s => s.initPeriods);
   const setYearAndLoad = usePeriodStore(s => s.setYearAndLoad);
+  const periods = usePeriodStore(s => s.periods);
   const initSearch = useSearchStore(s => s.initSearch);
 
   const { animate, cancel } = useRouteAnimation();
@@ -44,10 +47,10 @@ export function AppShell() {
 
   useEffect(() => {
     const book = BOOK_BY_ID[currentBook];
-    if (book) {
+    if (book && periods.length > 0) {
       setYearAndLoad(book.dateRange.start);
     }
-  }, [currentBook, setYearAndLoad]);
+  }, [currentBook, currentChapter, currentVerse, periods, setYearAndLoad]);
 
   const clearAutoPlayTimer = useCallback(() => {
     if (autoPlayRef.current !== null) {

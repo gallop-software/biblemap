@@ -18,8 +18,8 @@ export function LocationMarker() {
   return (
     <Marker longitude={place.coords[0]} latitude={place.coords[1]} anchor="center">
       <div className="relative flex items-center justify-center">
-        <div className="absolute w-8 h-8 rounded-full bg-amber-500/30 location-marker-pulse" />
-        <div className="w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow-lg" />
+        <div className="absolute w-8 h-8 rounded-full bg-blue-500/30 location-marker-pulse" />
+        <div className="w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow-lg" />
       </div>
     </Marker>
   );
