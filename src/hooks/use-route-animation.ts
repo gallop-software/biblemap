@@ -58,15 +58,20 @@ export function useRouteAnimation() {
 
     const coords: [number, number][] = resolvedWaypoints.map(p => p.coords);
     const line = lineString(coords);
-    const totalDistance = distance(
-      { type: 'Point', coordinates: coords[0] },
-      { type: 'Point', coordinates: coords[coords.length - 1] },
-      { units: 'kilometers' }
-    );
-    const totalDuration = (totalDistance / SPEED_KM_PER_SECOND) * 1000;
+
+    let totalDistance = 0;
+    for (let i = 1; i < coords.length; i++) {
+      totalDistance += distance(
+        { type: 'Point', coordinates: coords[i - 1] },
+        { type: 'Point', coordinates: coords[i] },
+        { units: 'kilometers' }
+      );
+    }
+
+    const rawDuration = (totalDistance / SPEED_KM_PER_SECOND) * 1000;
     const minDuration = 2000;
-    const maxDuration = 6000;
-    const duration = Math.max(minDuration, Math.min(maxDuration, totalDuration));
+    const maxDuration = 8000;
+    const duration = Math.max(minDuration, Math.min(maxDuration, rawDuration));
 
     const waypointLabels = route.waypoints.map(wp => wp.label);
 
@@ -89,7 +94,9 @@ export function useRouteAnimation() {
     });
 
     const startTime = performance.now() + 1500;
-    let pauseUntil = 0;
+    let totalPauseTime = 0;
+    let pauseStartedAt = 0;
+    let isPaused = false;
 
     function tick(now: number) {
       if (!stateRef.current.isAnimating) return;
@@ -99,14 +106,18 @@ export function useRouteAnimation() {
         return;
       }
 
-      if (pauseUntil > 0 && now < pauseUntil) {
-        animationRef.current = requestAnimationFrame(tick);
-        return;
+      if (isPaused) {
+        if (now < pauseStartedAt + WAYPOINT_PAUSE_MS) {
+          animationRef.current = requestAnimationFrame(tick);
+          return;
+        }
+        totalPauseTime += now - pauseStartedAt;
+        isPaused = false;
       }
-      pauseUntil = 0;
 
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
+      const elapsed = now - startTime - totalPauseTime;
+      const t = Math.min(elapsed / duration, 1);
+      const progress = t * t * (3 - 2 * t);
 
       const currentPoint = along(line, progress * totalDistance, { units: 'kilometers' });
       const currentCoords = currentPoint.geometry.coordinates as [number, number];
@@ -126,7 +137,8 @@ export function useRouteAnimation() {
 
           if (i > stateRef.current.currentSegment) {
             stateRef.current.currentSegment = i;
-            pauseUntil = now + WAYPOINT_PAUSE_MS;
+            isPaused = true;
+            pauseStartedAt = now;
           }
         } else {
           drawnPoints.push(currentCoords);
@@ -139,13 +151,13 @@ export function useRouteAnimation() {
 
       mapRef.easeTo({
         center: currentCoords,
-        duration: 50,
-        easing: (t: number) => t,
+        duration: 200,
+        easing: (x: number) => x,
       });
 
       onUpdateRef.current?.(stateRef.current);
 
-      if (progress >= 1) {
+      if (t >= 1) {
         stateRef.current.isAnimating = false;
         stateRef.current.points = coords;
         onUpdateRef.current?.(stateRef.current);
