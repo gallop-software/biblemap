@@ -6,8 +6,10 @@ interface UIState {
   setTextPanelOpen: (open: boolean) => void;
 }
 
+const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
 export const useUIStore = create<UIState>((set) => ({
-  textPanelOpen: true,
+  textPanelOpen: !isMobile,
   toggleTextPanel: () => set(s => ({ textPanelOpen: !s.textPanelOpen })),
   setTextPanelOpen: (open) => set({ textPanelOpen: open }),
 }));

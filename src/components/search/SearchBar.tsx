@@ -156,8 +156,8 @@ export function SearchBar() {
   }, [isOpen]);
 
   return (
-    <div className="relative flex-1 max-w-lg">
-      <div className="flex items-center gap-2 bg-white/10 rounded-lg px-3 py-1.5">
+    <div className="relative flex-1 md:max-w-lg">
+      <div className="flex items-center gap-2 bg-white/10 rounded-lg px-2.5 md:px-3 py-2 md:py-1.5">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gray-400 shrink-0">
           <circle cx="6" cy="6" r="4.5" />
           <line x1="9.5" y1="9.5" x2="13" y2="13" />
@@ -169,13 +169,13 @@ export function SearchBar() {
           onChange={(e) => handleChange(e.target.value)}
           onFocus={() => { if (query) setIsOpen(true); }}
           onKeyDown={handleKeyDown}
-          placeholder={currentRef || 'Search verse, place, nation... (/)'}
+          placeholder={currentRef || 'Search...'}
           className="bg-transparent text-sm text-white placeholder-gray-500 outline-none w-full"
         />
         {query && (
           <button
             onClick={() => { setQuery(''); setIsOpen(false); }}
-            className="text-gray-500 hover:text-gray-300 text-sm shrink-0"
+            className="text-gray-500 hover:text-gray-300 p-1 text-lg leading-none shrink-0"
           >
             &times;
           </button>
@@ -185,7 +185,7 @@ export function SearchBar() {
       {isOpen && (hasVerseResults || hasPlaceResults) && (
         <div
           ref={dropdownRef}
-          className="absolute top-full left-0 right-0 mt-1 bg-gray-800 border border-white/10 rounded-lg shadow-2xl z-50 max-h-80 overflow-y-auto"
+          className="absolute top-full left-0 right-0 mt-1 bg-gray-800 border border-white/10 rounded-lg shadow-2xl z-50 max-h-[60vh] md:max-h-80 overflow-y-auto overscroll-contain"
         >
           {hasVerseResults && (
             <div>
@@ -205,7 +205,7 @@ export function SearchBar() {
                   <button
                     key={`v-${match.book.id}-${match.chapter}-${match.verse}`}
                     onClick={() => handleSelectVerse(match)}
-                    className={`w-full text-left px-3 py-1.5 flex items-center gap-2 transition-colors ${
+                    className={`w-full text-left px-3 py-2.5 md:py-1.5 flex items-center gap-2 transition-colors ${
                       idx === selectedIndex
                         ? 'bg-amber-600/30 text-white'
                         : 'text-gray-300 hover:bg-white/10'
@@ -230,7 +230,7 @@ export function SearchBar() {
                   <button
                     key={`p-${entry.id}-${i}`}
                     onClick={() => handleSelectPlace(entry)}
-                    className={`w-full text-left px-3 py-1.5 flex items-center gap-2 transition-colors ${
+                    className={`w-full text-left px-3 py-2.5 md:py-1.5 flex items-center gap-2 transition-colors ${
                       idx === selectedIndex
                         ? 'bg-amber-600/30 text-white'
                         : 'text-gray-300 hover:bg-white/10'

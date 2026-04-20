@@ -138,17 +138,24 @@ export function AppShell() {
   }, [routeAnimState, cancel]);
 
   return (
-    <div className="flex flex-col h-screen w-screen bg-gray-950">
+    <div className="flex flex-col h-[100dvh] w-screen bg-gray-950">
       <TopBar />
-      <div className="flex flex-1 min-h-0">
+      <div className="flex flex-1 min-h-0 relative">
         <div className="flex-1 min-w-0">
           <MapContainer
             routeAnimationState={routeAnimState}
             fullRouteCoords={fullRouteCoords}
           />
         </div>
+        {/* Desktop: side panel */}
         {textPanelOpen && (
-          <div className="w-72">
+          <div className="hidden md:block w-72 shrink-0">
+            <VerseTextPanel />
+          </div>
+        )}
+        {/* Mobile: bottom sheet overlay */}
+        {textPanelOpen && (
+          <div className="md:hidden absolute inset-x-0 bottom-0 z-30 h-[55%] rounded-t-2xl overflow-hidden border-t border-white/10 shadow-2xl">
             <VerseTextPanel />
           </div>
         )}

@@ -96,23 +96,21 @@ export function TimeSlider() {
       : 0;
 
   return (
-    <div className="flex items-center gap-2 flex-1 min-w-0">
-      <span className="text-[9px] text-gray-500 font-mono shrink-0 w-14 text-right">
+    <div className="flex items-center gap-1.5 md:gap-2 flex-1 min-w-0">
+      <span className="text-[8px] md:text-[9px] text-gray-500 font-mono shrink-0 w-11 md:w-14 text-right">
         {formatYear(minYear)}
       </span>
 
       <div
         ref={trackRef}
-        className="relative flex-1 h-6 cursor-pointer select-none"
+        className="relative flex-1 h-10 md:h-6 cursor-pointer select-none touch-none"
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerLeave={handlePointerLeave}
       >
-        {/* Background track */}
         <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-2 rounded-full bg-white/10" />
 
-        {/* Period segments — absolutely positioned by year */}
         {periods.map((period, i) => {
           const left = yearToPercent(period.startYear);
           const width = yearToPercent(period.endYear) - left;
@@ -137,16 +135,14 @@ export function TimeSlider() {
           );
         })}
 
-        {/* Thumb */}
         <div
-          className={`absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full border-2 border-white bg-white shadow-lg z-10 ${isDragging ? '' : 'transition-[left] duration-300'}`}
+          className={`absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 md:w-3.5 md:h-3.5 rounded-full border-2 border-white bg-white shadow-lg z-10 ${isDragging ? '' : 'transition-[left] duration-300'}`}
           style={{ left: `${thumbPercent}%` }}
         />
 
-        {/* Hover tooltip */}
         {hoverYear !== null && !isDragging && (
           <div
-            className="absolute -top-6 -translate-x-1/2 text-[9px] text-gray-300 bg-gray-800 px-1.5 py-0.5 rounded pointer-events-none"
+            className="absolute -top-6 -translate-x-1/2 text-[9px] text-gray-300 bg-gray-800 px-1.5 py-0.5 rounded pointer-events-none hidden md:block"
             style={{ left: `${yearToPercent(hoverYear)}%` }}
           >
             {formatYear(hoverYear)}
@@ -154,7 +150,7 @@ export function TimeSlider() {
         )}
       </div>
 
-      <span className="text-[9px] text-gray-500 font-mono shrink-0 w-12">
+      <span className="text-[8px] md:text-[9px] text-gray-500 font-mono shrink-0 w-9 md:w-12">
         {formatYear(maxYear)}
       </span>
     </div>
