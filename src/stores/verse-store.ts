@@ -38,8 +38,8 @@ function resolveLocation(
 }
 
 export const useVerseStore = create<VerseState>((set, get) => ({
-  currentBook: 'deu',
-  currentChapter: 1,
+  currentBook: 'isa',
+  currentChapter: 26,
   currentVerse: 1,
   currentLocation: null,
   chapterLocations: [],
