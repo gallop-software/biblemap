@@ -80,6 +80,24 @@
       "folder": "period-0063bc-0100ad",
       "description": "Roman occupation, life of Christ, early church",
       "color": "#8B0000"
+    },
+    {
+      "id": "times-of-gentiles",
+      "name": "Times of the Gentiles",
+      "startYear": 100,
+      "endYear": 2030,
+      "folder": "period-gentiles",
+      "description": "Jerusalem trampled by the nations until the times of the Gentiles are fulfilled (Luke 21:24)",
+      "color": "#708090"
+    },
+    {
+      "id": "millennial-kingdom",
+      "name": "Millennial Kingdom",
+      "startYear": 2030,
+      "endYear": 3030,
+      "folder": "period-millennial",
+      "description": "The prophetic thousand-year reign of Messiah from Jerusalem",
+      "color": "#FFD700"
     }
   ]
 }

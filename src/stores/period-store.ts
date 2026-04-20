@@ -13,6 +13,7 @@ interface PeriodState {
 
   initPeriods: () => Promise<void>;
   setYearAndLoad: (year: number) => Promise<void>;
+  loadPeriodById: (periodId: string) => Promise<void>;
   loadPeriodData: (period: HistoricalPeriod) => Promise<void>;
 }
 
@@ -50,6 +51,16 @@ export const usePeriodStore = create<PeriodState>((set, get) => ({
     if (resolved.id === activePeriod?.id) return;
 
     await get().loadPeriodData(resolved);
+  },
+
+  loadPeriodById: async (periodId: string) => {
+    const { periods, activePeriod } = get();
+    if (activePeriod?.id === periodId) return;
+    const period = periods.find(p => p.id === periodId);
+    if (period) {
+      set({ activeYear: period.startYear });
+      await get().loadPeriodData(period);
+    }
   },
 
   loadPeriodData: async (period: HistoricalPeriod) => {

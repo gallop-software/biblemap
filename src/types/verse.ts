@@ -18,6 +18,7 @@ export interface VerseLocationPoint {
   zoom?: number;
   pitch?: number;
   bearing?: number;
+  periodId?: string;
 }
 
 export interface VerseLocationRoute {
@@ -26,6 +27,7 @@ export interface VerseLocationRoute {
   waypoints: RouteWaypoint[];
   label: string;
   zoom?: number;
+  periodId?: string;
 }
 
 export interface VerseLocationNull {

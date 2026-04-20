@@ -12,7 +12,6 @@ export function TimeSlider() {
   const [dragYear, setDragYear] = useState<number | null>(null);
   const rafRef = useRef<number | null>(null);
   const pendingYearRef = useRef<number | null>(null);
-
   const minYear = periods.length > 0 ? periods[0].startYear : -2100;
   const maxYear = periods.length > 0 ? periods[periods.length - 1].endYear : 100;
   const totalSpan = maxYear - minYear;

@@ -24,6 +24,7 @@ export function AppShell() {
   const currentBook = useVerseStore(s => s.currentBook);
   const initPeriods = usePeriodStore(s => s.initPeriods);
   const setYearAndLoad = usePeriodStore(s => s.setYearAndLoad);
+  const loadPeriodById = usePeriodStore(s => s.loadPeriodById);
   const periods = usePeriodStore(s => s.periods);
   const initSearch = useSearchStore(s => s.initSearch);
 
@@ -47,6 +48,18 @@ export function AppShell() {
       setYearAndLoad(book.dateRange.start);
     }
   }, [currentBook, periods, setYearAndLoad]);
+
+  useEffect(() => {
+    if (!currentLocation || periods.length === 0) return;
+    if (currentLocation.type === 'point' || currentLocation.type === 'route') {
+      if (currentLocation.periodId) {
+        loadPeriodById(currentLocation.periodId);
+      } else {
+        const book = BOOK_BY_ID[currentBook];
+        if (book) setYearAndLoad(book.dateRange.start);
+      }
+    }
+  }, [currentLocation, currentBook, periods, loadPeriodById, setYearAndLoad]);
 
   useEffect(() => {
     if (!currentLocation || !places) return;

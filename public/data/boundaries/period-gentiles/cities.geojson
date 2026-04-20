@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2332, 31.7767] },
+      "properties": { "id": "jerusalem", "name": "Jerusalem (trampled by nations)", "importance": "capital", "placeId": "jerusalem" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [41.01, 28.98] },
+      "properties": { "id": "constantinople", "name": "Constantinople", "importance": "capital", "placeId": "constantinople" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.50, 41.90] },
+      "properties": { "id": "rome", "name": "Rome", "importance": "capital", "placeId": "rome" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.37, 33.31] },
+      "properties": { "id": "baghdad", "name": "Baghdad", "importance": "major", "placeId": "baghdad" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.32, 33.51] },
+      "properties": { "id": "damascus", "name": "Damascus", "importance": "major", "placeId": "damascus" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.50, 33.89] },
+      "properties": { "id": "beirut", "name": "Beirut", "importance": "minor", "placeId": "beirut" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.10, 31.53] },
+      "properties": { "id": "hebron", "name": "Hebron", "importance": "minor", "placeId": "hebron" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.75, 32.08] },
+      "properties": { "id": "jaffa", "name": "Jaffa", "importance": "minor", "placeId": "jaffa" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.00, 32.82] },
+      "properties": { "id": "acre", "name": "Acre", "importance": "minor", "placeId": "acre" }
+    }
+  ]
+}

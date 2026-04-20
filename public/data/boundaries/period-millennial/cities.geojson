@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2332, 31.7767] },
+      "properties": { "id": "jerusalem", "name": "Jerusalem (Throne of the LORD)", "importance": "capital", "placeId": "jerusalem" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.10, 31.53] },
+      "properties": { "id": "hebron", "name": "Hebron", "importance": "major", "placeId": "hebron" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.18, 32.58] },
+      "properties": { "id": "megiddo", "name": "Megiddo", "importance": "major", "placeId": "megiddo" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.79, 31.24] },
+      "properties": { "id": "beer-sheba", "name": "Beer-sheba", "importance": "major", "placeId": "beer-sheba" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.65, 33.25] },
+      "properties": { "id": "dan", "name": "Dan", "importance": "major", "placeId": "dan" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.50, 32.50] },
+      "properties": { "id": "beth-shean", "name": "Beth-shean", "importance": "minor", "placeId": "beth-shean" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.44, 31.87] },
+      "properties": { "id": "jericho", "name": "Jericho", "importance": "minor", "placeId": "jericho" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.85, 31.56] },
+      "properties": { "id": "lachish", "name": "Lachish", "importance": "minor", "placeId": "lachish" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.47, 31.50] },
+      "properties": { "id": "gaza", "name": "Gaza", "importance": "minor", "placeId": "gaza" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.28, 32.21] },
+      "properties": { "id": "shechem", "name": "Shechem", "importance": "minor", "placeId": "shechem" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.32, 33.51] },
+      "properties": { "id": "damascus", "name": "Damascus", "importance": "minor", "placeId": "damascus" }
+    }
+  ]
+}

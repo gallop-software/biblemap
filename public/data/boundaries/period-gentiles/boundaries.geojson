@@ -1,0 +1,64 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "roman-empire",
+        "name": "Gentile Powers",
+        "type": "empire",
+        "fillColor": "#708090",
+        "strokeColor": "#4A5568",
+        "labelCoords": [36.50, 33.00]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [29.00, 28.00],
+          [29.00, 37.00],
+          [45.00, 37.00],
+          [45.00, 28.00],
+          [29.00, 28.00]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "land-of-israel",
+        "name": "Land of Israel (under Gentile rule)",
+        "type": "region",
+        "fillColor": "#4A90D9",
+        "strokeColor": "#2E5984",
+        "labelCoords": [35.05, 31.80]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.20, 31.00],
+          [34.25, 31.25],
+          [34.43, 31.50],
+          [34.55, 31.67],
+          [34.65, 31.82],
+          [34.76, 32.05],
+          [34.86, 32.35],
+          [34.90, 32.55],
+          [34.98, 32.82],
+          [35.07, 32.95],
+          [35.20, 33.27],
+          [35.37, 33.55],
+          [35.65, 33.35],
+          [35.62, 33.10],
+          [35.58, 32.88],
+          [35.60, 32.50],
+          [35.55, 32.20],
+          [35.50, 31.55],
+          [35.47, 31.30],
+          [35.15, 31.05],
+          [34.80, 31.05],
+          [34.20, 31.00]
+        ]]
+      }
+    }
+  ]
+}
