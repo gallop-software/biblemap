@@ -5,7 +5,7 @@ function PeriodBadge() {
   const activePeriod = usePeriodStore(s => s.activePeriod);
   return (
     <div
-      className="text-[9px] md:text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded shrink-0 hidden sm:block sm:w-[140px] md:w-[170px] text-center"
+      className="text-xs md:text-sm font-semibold uppercase tracking-wider px-2 py-0.5 rounded shrink-0 hidden sm:block sm:w-[150px] md:w-[190px] text-center"
       style={activePeriod
         ? { backgroundColor: activePeriod.color + '33', color: activePeriod.color }
         : { backgroundColor: 'transparent', color: 'transparent' }

@@ -161,7 +161,7 @@ export function AppShell() {
         </div>
         {/* Desktop: side panel */}
         {textPanelOpen && (
-          <div className="hidden md:block w-72 shrink-0">
+          <div className="hidden md:block w-80 lg:w-96 shrink-0">
             <VerseTextPanel />
           </div>
         )}

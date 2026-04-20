@@ -22,7 +22,7 @@ export function NavigationControls() {
           <path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-      <span className="hidden md:inline text-sm font-semibold text-white min-w-[100px] text-center">{ref}</span>
+      <span className="hidden md:inline text-base font-semibold text-white min-w-[110px] text-center">{ref}</span>
       <button
         onClick={nextVerse}
         className="text-white/80 hover:text-white p-2 rounded hover:bg-white/10 transition-colors"

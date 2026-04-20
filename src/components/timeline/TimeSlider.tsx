@@ -96,7 +96,7 @@ export function TimeSlider() {
 
   return (
     <div className="flex items-center gap-1.5 md:gap-2 flex-1 min-w-0">
-      <span className="text-[8px] md:text-[9px] text-gray-500 font-mono shrink-0 w-11 md:w-14 text-right">
+      <span className="text-[10px] md:text-xs text-gray-500 font-mono shrink-0 w-[4.5rem] md:w-20 text-right whitespace-nowrap">
         {formatYear(minYear)}
       </span>
 
@@ -141,7 +141,7 @@ export function TimeSlider() {
 
         {hoverYear !== null && !isDragging && (
           <div
-            className="absolute -top-6 -translate-x-1/2 text-[9px] text-gray-300 bg-gray-800 px-1.5 py-0.5 rounded pointer-events-none hidden md:block"
+            className="absolute -top-6 -translate-x-1/2 text-xs text-gray-300 bg-gray-800 px-1.5 py-0.5 rounded pointer-events-none hidden md:block"
             style={{ left: `${yearToPercent(hoverYear)}%` }}
           >
             {formatYear(hoverYear)}
@@ -149,7 +149,7 @@ export function TimeSlider() {
         )}
       </div>
 
-      <span className="text-[8px] md:text-[9px] text-gray-500 font-mono shrink-0 w-9 md:w-12">
+      <span className="text-[10px] md:text-xs text-gray-500 font-mono shrink-0 w-[4.5rem] md:w-20 whitespace-nowrap">
         {formatYear(maxYear)}
       </span>
     </div>

@@ -13,7 +13,7 @@ export function resolvePeriodForYear(
 }
 
 export function formatYear(year: number): string {
-  if (year < 0) return `~${Math.abs(year)} BCE`;
-  if (year === 0) return '~1 BCE';
-  return `~${year} CE`;
+  if (year < 0) return `~${Math.abs(year)} BC`;
+  if (year === 0) return '~1 BC';
+  return `~${year} AD`;
 }

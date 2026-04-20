@@ -170,7 +170,7 @@ export function SearchBar() {
           onFocus={() => { if (query) setIsOpen(true); }}
           onKeyDown={handleKeyDown}
           placeholder={currentRef || 'Search...'}
-          className="bg-transparent text-sm text-white placeholder-gray-500 outline-none w-full"
+          className="bg-transparent text-base text-white placeholder-gray-500 outline-none w-full"
         />
         {query && (
           <button
@@ -189,13 +189,13 @@ export function SearchBar() {
         >
           {hasVerseResults && (
             <div>
-              <div className="px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider text-gray-500 bg-gray-800/80 sticky top-0 border-b border-white/5">
+              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-gray-500 bg-gray-800/80 sticky top-0 border-b border-white/5">
                 Verses
               </div>
               {verseMatches.map((match, i) => {
                 if (match.verse === undefined) {
                   return (
-                    <div key={`v-more-${i}`} className="px-3 py-1.5 text-xs text-gray-600 italic">
+                    <div key={`v-more-${i}`} className="px-3 py-1.5 text-sm text-gray-600 italic">
                       {match.display}
                     </div>
                   );
@@ -211,8 +211,8 @@ export function SearchBar() {
                         : 'text-gray-300 hover:bg-white/10'
                     }`}
                   >
-                    <span className="text-amber-500 text-xs font-mono w-5 text-center">{match.verse}</span>
-                    <span className="text-sm"><BookName book={match.book} /> {match.chapter}:{match.verse}</span>
+                    <span className="text-amber-500 text-sm font-mono w-5 text-center">{match.verse}</span>
+                    <span className="text-base"><BookName book={match.book} /> {match.chapter}:{match.verse}</span>
                   </button>
                 );
               })}
@@ -221,7 +221,7 @@ export function SearchBar() {
 
           {hasPlaceResults && (
             <div>
-              <div className="px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider text-gray-500 bg-gray-800/80 sticky top-0 border-b border-white/5">
+              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-gray-500 bg-gray-800/80 sticky top-0 border-b border-white/5">
                 Places &amp; Nations
               </div>
               {placeResults.map((entry, i) => {
@@ -236,18 +236,18 @@ export function SearchBar() {
                         : 'text-gray-300 hover:bg-white/10'
                     }`}
                   >
-                    <span className="text-gray-500 text-xs w-5 text-center">
+                    <span className="text-gray-500 text-sm w-5 text-center">
                       {entry.category === 'nation' ? '\u25B3' : entry.category === 'people' ? '\u263A' : '\u2022'}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <span className="text-sm">{entry.name}</span>
+                      <span className="text-base">{entry.name}</span>
                       {entry.altNames.length > 0 && (
-                        <span className="text-[10px] text-gray-600 ml-2">
+                        <span className="text-sm text-gray-500 ml-2">
                           {entry.altNames.slice(0, 2).join(', ')}
                         </span>
                       )}
                     </div>
-                    <span className="text-[9px] text-gray-600 uppercase shrink-0">{entry.type}</span>
+                    <span className="text-xs text-gray-500 uppercase shrink-0">{entry.type}</span>
                   </button>
                 );
               })}
@@ -258,7 +258,7 @@ export function SearchBar() {
 
       {isOpen && !hasVerseResults && !hasPlaceResults && query.length > 0 && (
         <div className="absolute top-full left-0 right-0 mt-1 bg-gray-800 border border-white/10 rounded-lg shadow-2xl z-50 p-3">
-          <div className="text-xs text-gray-500 text-center">
+          <div className="text-sm text-gray-500 text-center">
             No results. Try "Deut 1:1" or "Sinai"
           </div>
         </div>

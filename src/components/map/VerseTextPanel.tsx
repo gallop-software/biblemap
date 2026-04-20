@@ -26,10 +26,10 @@ export function VerseTextPanel() {
     <div className="flex flex-col h-full bg-gray-900/95 md:border-l border-white/10">
       <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
         <div>
-          <h3 className="text-sm font-bold text-amber-400">
+          <h3 className="text-lg font-semibold text-amber-400">
             {book?.name} {currentChapter}
           </h3>
-          <div className="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">
+          <div className="text-xs text-gray-500 uppercase tracking-wider mt-0.5">
             King James Version
           </div>
         </div>
@@ -43,7 +43,7 @@ export function VerseTextPanel() {
           </svg>
         </button>
       </div>
-      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-3 space-y-2 overscroll-contain">
+      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-3 space-y-3 overscroll-contain" style={{ fontFamily: "'Source Serif 4', Georgia, serif" }}>
         {verses.map(v => {
           const text = chapterText[String(v)];
           const isActive = v === currentVerse;
@@ -51,14 +51,14 @@ export function VerseTextPanel() {
             <p
               key={v}
               id={`verse-text-${v}`}
-              className={`text-sm leading-relaxed transition-colors duration-300 cursor-pointer py-0.5 ${
+              className={`text-base md:text-lg leading-relaxed transition-colors duration-300 cursor-pointer py-0.5 ${
                 isActive
                   ? 'text-white font-medium'
                   : 'text-gray-500 hover:text-gray-300'
               }`}
               onClick={() => useVerseStore.getState().setVerse(v)}
             >
-              <sup className={`text-[10px] mr-1 ${isActive ? 'text-amber-400 font-bold' : 'text-gray-600'}`}>
+              <sup className={`text-xs mr-1.5 ${isActive ? 'text-amber-400 font-bold' : 'text-gray-600'}`} style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
                 {v}
               </sup>
               {text || '...'}

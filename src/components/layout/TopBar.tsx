@@ -6,8 +6,8 @@ export function TopBar() {
   const toggleTextPanel = useUIStore(s => s.toggleTextPanel);
 
   return (
-    <div className="flex items-center h-11 md:h-12 px-2 md:px-3 bg-gray-900 border-b border-white/10 gap-2 md:gap-3 shrink-0">
-      <h1 className="hidden md:block text-base font-bold text-white tracking-wide shrink-0">BibleMap</h1>
+    <div className="flex items-center h-12 md:h-14 px-2 md:px-3 bg-gray-900 border-b border-white/10 gap-2 md:gap-3 shrink-0">
+      <h1 className="hidden md:block text-lg font-bold text-white tracking-wide shrink-0">BibleMap</h1>
       <SearchBar />
       <div className="ml-auto flex items-center gap-1 md:gap-2">
         <NavigationControls />
