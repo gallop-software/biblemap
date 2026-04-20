@@ -1,0 +1,395 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.25, 29.85]
+      },
+      "properties": {
+        "id": "memphis",
+        "name": "Memphis",
+        "importance": "capital",
+        "placeId": "memphis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.65, 25.70]
+      },
+      "properties": {
+        "id": "thebes",
+        "name": "Thebes",
+        "importance": "capital",
+        "placeId": "thebes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.44, 31.87]
+      },
+      "properties": {
+        "id": "jericho",
+        "name": "Jericho",
+        "importance": "major",
+        "placeId": "jericho"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.57, 33.02]
+      },
+      "properties": {
+        "id": "hazor",
+        "name": "Hazor",
+        "importance": "major",
+        "placeId": "hazor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.18, 32.58]
+      },
+      "properties": {
+        "id": "megiddo",
+        "name": "Megiddo",
+        "importance": "major",
+        "placeId": "megiddo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.28, 32.21]
+      },
+      "properties": {
+        "id": "shechem",
+        "name": "Shechem",
+        "importance": "major",
+        "placeId": "shechem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.10, 31.53]
+      },
+      "properties": {
+        "id": "hebron",
+        "name": "Hebron",
+        "importance": "major",
+        "placeId": "hebron"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.23, 31.77]
+      },
+      "properties": {
+        "id": "jerusalem",
+        "name": "Jerusalem (Jebus)",
+        "importance": "major",
+        "placeId": "jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.47, 31.50]
+      },
+      "properties": {
+        "id": "gaza",
+        "name": "Gaza",
+        "importance": "major",
+        "placeId": "gaza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.17, 32.77]
+      },
+      "properties": {
+        "id": "ashtaroth",
+        "name": "Ashtaroth",
+        "importance": "major",
+        "placeId": "ashtaroth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.10, 32.62]
+      },
+      "properties": {
+        "id": "edrei",
+        "name": "Edrei",
+        "importance": "major",
+        "placeId": "edrei"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.85, 31.56]
+      },
+      "properties": {
+        "id": "lachish",
+        "name": "Lachish",
+        "importance": "minor",
+        "placeId": "lachish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.26, 31.92]
+      },
+      "properties": {
+        "id": "ai",
+        "name": "Ai",
+        "importance": "minor",
+        "placeId": "ai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.23, 31.93]
+      },
+      "properties": {
+        "id": "bethel",
+        "name": "Bethel",
+        "importance": "minor",
+        "placeId": "bethel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.29, 32.06]
+      },
+      "properties": {
+        "id": "shiloh",
+        "name": "Shiloh",
+        "importance": "minor",
+        "placeId": "shiloh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.19, 31.85]
+      },
+      "properties": {
+        "id": "gibeon",
+        "name": "Gibeon",
+        "importance": "minor",
+        "placeId": "gibeon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.05, 31.43]
+      },
+      "properties": {
+        "id": "debir",
+        "name": "Debir",
+        "importance": "minor",
+        "placeId": "debir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.92, 31.87]
+      },
+      "properties": {
+        "id": "gezer",
+        "name": "Gezer",
+        "importance": "minor",
+        "placeId": "gezer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.50, 32.50]
+      },
+      "properties": {
+        "id": "beth-shean",
+        "name": "Beth-shean",
+        "importance": "minor",
+        "placeId": "beth-shean"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.39, 30.85]
+      },
+      "properties": {
+        "id": "kadesh-barnea",
+        "name": "Kadesh-barnea",
+        "importance": "minor",
+        "placeId": "kadesh-barnea"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.95, 31.25]
+      },
+      "properties": {
+        "id": "hormah",
+        "name": "Hormah",
+        "importance": "minor",
+        "placeId": "hormah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.13, 31.28]
+      },
+      "properties": {
+        "id": "arad",
+        "name": "Arad",
+        "importance": "minor",
+        "placeId": "arad"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.79, 31.24]
+      },
+      "properties": {
+        "id": "beer-sheba",
+        "name": "Beer-sheba",
+        "importance": "minor",
+        "placeId": "beer-sheba"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.65, 33.25]
+      },
+      "properties": {
+        "id": "dan",
+        "name": "Dan (Laish)",
+        "importance": "minor",
+        "placeId": "dan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.93, 31.95]
+      },
+      "properties": {
+        "id": "rabbah",
+        "name": "Rabbah (Ammon)",
+        "importance": "minor",
+        "placeId": "rabbah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.80, 31.80]
+      },
+      "properties": {
+        "id": "heshbon",
+        "name": "Heshbon",
+        "importance": "minor",
+        "placeId": "heshbon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.78, 31.50]
+      },
+      "properties": {
+        "id": "dibon",
+        "name": "Dibon",
+        "importance": "minor",
+        "placeId": "dibon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.62, 30.73]
+      },
+      "properties": {
+        "id": "bozrah",
+        "name": "Bozrah (Edom)",
+        "importance": "minor",
+        "placeId": "bozrah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.19, 33.27]
+      },
+      "properties": {
+        "id": "tyre",
+        "name": "Tyre",
+        "importance": "minor",
+        "placeId": "tyre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.37, 33.56]
+      },
+      "properties": {
+        "id": "sidon",
+        "name": "Sidon",
+        "importance": "minor",
+        "placeId": "sidon"
+      }
+    }
+  ]
+}

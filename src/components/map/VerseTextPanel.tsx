@@ -1,0 +1,58 @@
+import { useEffect, useRef } from 'react';
+import { useVerseStore } from '../../stores/verse-store';
+import { BOOK_BY_ID } from '../../data/book-metadata';
+
+export function VerseTextPanel() {
+  const currentBook = useVerseStore(s => s.currentBook);
+  const currentChapter = useVerseStore(s => s.currentChapter);
+  const currentVerse = useVerseStore(s => s.currentVerse);
+  const chapterText = useVerseStore(s => s.chapterText);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const book = BOOK_BY_ID[currentBook];
+  const verseCount = book?.verseCounts[currentChapter - 1] ?? 0;
+  const verses = Array.from({ length: verseCount }, (_, i) => i + 1);
+
+  useEffect(() => {
+    const el = document.getElementById(`verse-text-${currentVerse}`);
+    if (el && scrollRef.current) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [currentVerse]);
+
+  return (
+    <div className="flex flex-col h-full bg-gray-900/95 border-l border-white/10">
+      <div className="px-4 py-3 border-b border-white/10">
+        <h3 className="text-sm font-bold text-amber-400">
+          {book?.name} {currentChapter}
+        </h3>
+        <div className="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">
+          King James Version
+        </div>
+      </div>
+      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-3 space-y-2">
+        {verses.map(v => {
+          const text = chapterText[String(v)];
+          const isActive = v === currentVerse;
+          return (
+            <p
+              key={v}
+              id={`verse-text-${v}`}
+              className={`text-sm leading-relaxed transition-colors duration-300 cursor-pointer ${
+                isActive
+                  ? 'text-white font-medium'
+                  : 'text-gray-500 hover:text-gray-300'
+              }`}
+              onClick={() => useVerseStore.getState().setVerse(v)}
+            >
+              <sup className={`text-[10px] mr-1 ${isActive ? 'text-amber-400 font-bold' : 'text-gray-600'}`}>
+                {v}
+              </sup>
+              {text || '...'}
+            </p>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

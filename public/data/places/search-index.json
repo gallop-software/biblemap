@@ -1,0 +1,375 @@
+[
+  {
+    "id": "plains-of-moab",
+    "name": "Plains of Moab",
+    "altNames": [
+      "Arvot Moav",
+      "Steppes of Moab"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "mount-sinai",
+    "name": "Mount Sinai",
+    "altNames": [
+      "Horeb",
+      "Mount Horeb",
+      "Jebel Musa"
+    ],
+    "type": "mountain",
+    "category": "place"
+  },
+  {
+    "id": "mount-seir",
+    "name": "Mount Seir",
+    "altNames": [
+      "Seir"
+    ],
+    "type": "mountain",
+    "category": "place"
+  },
+  {
+    "id": "kadesh-barnea",
+    "name": "Kadesh-barnea",
+    "altNames": [
+      "Kadesh",
+      "Meribah-kadesh",
+      "Ain el-Qudeirat"
+    ],
+    "type": "settlement",
+    "category": "place"
+  },
+  {
+    "id": "bashan-ashtaroth",
+    "name": "Ashtaroth (Bashan)",
+    "altNames": [
+      "Ashtaroth",
+      "Ashteroth Karnaim",
+      "Tell Ashtara"
+    ],
+    "type": "settlement",
+    "category": "place"
+  },
+  {
+    "id": "arabah",
+    "name": "Arabah",
+    "altNames": [
+      "Aravah",
+      "Jordan Rift Valley"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "hill-country-canaan",
+    "name": "Hill Country of Canaan",
+    "altNames": [
+      "Hill Country of the Amorites",
+      "Central Highlands"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "negev",
+    "name": "Negev",
+    "altNames": [
+      "Negeb",
+      "The South"
+    ],
+    "type": "desert",
+    "category": "place"
+  },
+  {
+    "id": "coastal-plain",
+    "name": "Coastal Plain",
+    "altNames": [
+      "Shephelah",
+      "Western Lowland",
+      "Seacoast"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "lebanon",
+    "name": "Lebanon",
+    "altNames": [
+      "Mount Lebanon",
+      "Levanon"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "euphrates-river",
+    "name": "Euphrates River",
+    "altNames": [
+      "The Great River",
+      "Perath",
+      "Frat"
+    ],
+    "type": "river",
+    "category": "place"
+  },
+  {
+    "id": "land-of-canaan",
+    "name": "Land of Canaan",
+    "altNames": [
+      "Canaan",
+      "Promised Land",
+      "Land of the Canaanites"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "wilderness-of-paran",
+    "name": "Wilderness of Paran",
+    "altNames": [
+      "Paran",
+      "Desert of Paran"
+    ],
+    "type": "desert",
+    "category": "place"
+  },
+  {
+    "id": "valley-of-eshcol",
+    "name": "Valley of Eshcol",
+    "altNames": [
+      "Eshcol",
+      "Wadi Eshcol",
+      "Nahal Eshkol"
+    ],
+    "type": "valley",
+    "category": "place"
+  },
+  {
+    "id": "hill-country-kadesh",
+    "name": "Hill Country near Kadesh",
+    "altNames": [
+      "Hill Country of the Amorites near Kadesh"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "hormah",
+    "name": "Hormah",
+    "altNames": [
+      "Zephath",
+      "Tel Masos"
+    ],
+    "type": "settlement",
+    "category": "place"
+  },
+  {
+    "id": "seir-edom",
+    "name": "Seir (Edom)",
+    "altNames": [
+      "Edom",
+      "Land of Esau"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "edrei",
+    "name": "Edrei",
+    "altNames": [
+      "Daraa",
+      "Adraa",
+      "Der'a"
+    ],
+    "type": "settlement",
+    "category": "place"
+  },
+  {
+    "id": "hill-country-hebron",
+    "name": "Hill Country near Hebron",
+    "altNames": [
+      "Hebron hills",
+      "Valley of Eshcol area"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "wilderness-red-sea",
+    "name": "Wilderness toward the Red Sea",
+    "altNames": [
+      "Way of the Red Sea"
+    ],
+    "type": "desert",
+    "category": "place"
+  },
+  {
+    "id": "amorite-territory",
+    "name": "Amorite Territory",
+    "altNames": [
+      "Land of the Amorites",
+      "Amorite hill country"
+    ],
+    "type": "region",
+    "category": "place"
+  },
+  {
+    "id": "egypt-new-kingdom",
+    "name": "Egypt (New Kingdom)",
+    "altNames": [],
+    "type": "empire",
+    "category": "nation"
+  },
+  {
+    "id": "canaan",
+    "name": "Canaan",
+    "altNames": [],
+    "type": "region",
+    "category": "nation"
+  },
+  {
+    "id": "moab",
+    "name": "Moab",
+    "altNames": [],
+    "type": "kingdom",
+    "category": "nation"
+  },
+  {
+    "id": "edom-seir",
+    "name": "Edom (Seir)",
+    "altNames": [],
+    "type": "kingdom",
+    "category": "nation"
+  },
+  {
+    "id": "ammon",
+    "name": "Ammon",
+    "altNames": [],
+    "type": "kingdom",
+    "category": "nation"
+  },
+  {
+    "id": "bashan",
+    "name": "Bashan",
+    "altNames": [],
+    "type": "region",
+    "category": "nation"
+  },
+  {
+    "id": "amorite-territory",
+    "name": "Amorite Territory",
+    "altNames": [],
+    "type": "region",
+    "category": "nation"
+  },
+  {
+    "id": "midian",
+    "name": "Midian",
+    "altNames": [],
+    "type": "region",
+    "category": "nation"
+  },
+  {
+    "id": "israelites",
+    "name": "Israelites",
+    "altNames": [
+      "Israel",
+      "Children of Israel",
+      "Twelve Tribes",
+      "Hebrews"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "philistines",
+    "name": "Philistines",
+    "altNames": [
+      "Peleset",
+      "Sea Peoples"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "amorites",
+    "name": "Amorites",
+    "altNames": [
+      "Amorite"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "canaanites",
+    "name": "Canaanites",
+    "altNames": [
+      "Canaanite"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "hittites",
+    "name": "Hittites",
+    "altNames": [
+      "Hittite",
+      "Sons of Heth"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "moabites",
+    "name": "Moabites",
+    "altNames": [
+      "Moabite",
+      "People of Moab"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "edomites",
+    "name": "Edomites",
+    "altNames": [
+      "Edomite",
+      "Sons of Esau",
+      "People of Seir"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "ammonites",
+    "name": "Ammonites",
+    "altNames": [
+      "Ammonite",
+      "Children of Ammon"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "midianites",
+    "name": "Midianites",
+    "altNames": [
+      "Midianite",
+      "People of Midian"
+    ],
+    "type": "people-group",
+    "category": "people"
+  },
+  {
+    "id": "egyptians",
+    "name": "Egyptians",
+    "altNames": [
+      "Egyptian",
+      "People of Egypt",
+      "Pharaoh"
+    ],
+    "type": "people-group",
+    "category": "people"
+  }
+]

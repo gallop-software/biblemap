@@ -1,0 +1,212 @@
+{
+  "plains-of-moab": {
+    "id": "plains-of-moab",
+    "name": "Plains of Moab",
+    "altNames": ["Arvot Moav", "Steppes of Moab"],
+    "type": "region",
+    "coords": [35.72, 31.77],
+    "modernName": "Jordan Valley, east of Jordan River near Dead Sea",
+    "description": "The plains east of the Jordan River opposite Jericho, where Moses addressed Israel before entering Canaan.",
+    "searchTerms": ["plains", "moab", "arvot", "jordan", "steppes"]
+  },
+  "mount-sinai": {
+    "id": "mount-sinai",
+    "name": "Mount Sinai",
+    "altNames": ["Horeb", "Mount Horeb", "Jebel Musa"],
+    "type": "mountain",
+    "coords": [33.975, 28.5396],
+    "modernName": "Jebel Musa, Sinai Peninsula, Egypt",
+    "description": "The mountain where God gave the Law to Moses. Also called Horeb in Deuteronomy.",
+    "searchTerms": ["sinai", "horeb", "jebel musa", "mountain", "law"]
+  },
+  "mount-seir": {
+    "id": "mount-seir",
+    "name": "Mount Seir",
+    "altNames": ["Seir"],
+    "type": "mountain",
+    "coords": [35.45, 30.73],
+    "modernName": "Mountains of southern Jordan (Edom region)",
+    "description": "Mountain range in the land of Edom, territory of the descendants of Esau.",
+    "searchTerms": ["seir", "edom", "esau", "mountain"]
+  },
+  "kadesh-barnea": {
+    "id": "kadesh-barnea",
+    "name": "Kadesh-barnea",
+    "altNames": ["Kadesh", "Meribah-kadesh", "Ain el-Qudeirat"],
+    "type": "settlement",
+    "coords": [34.39, 30.85],
+    "modernName": "Ain el-Qudeirat, northeastern Sinai",
+    "description": "An oasis settlement where Israel encamped and from which the twelve spies were sent into Canaan.",
+    "searchTerms": ["kadesh", "barnea", "meribah", "ain", "qudeirat", "spies"]
+  },
+  "bashan-ashtaroth": {
+    "id": "bashan-ashtaroth",
+    "name": "Ashtaroth (Bashan)",
+    "altNames": ["Ashtaroth", "Ashteroth Karnaim", "Tell Ashtara"],
+    "type": "settlement",
+    "coords": [36.17, 32.77],
+    "modernName": "Tell Ashtara, southern Syria",
+    "description": "A city in Bashan, one of the royal cities of Og king of Bashan.",
+    "searchTerms": ["ashtaroth", "bashan", "og", "karnaim", "tell ashtara"]
+  },
+  "arabah": {
+    "id": "arabah",
+    "name": "Arabah",
+    "altNames": ["Aravah", "Jordan Rift Valley"],
+    "type": "region",
+    "coords": [35.37, 30.90],
+    "modernName": "Arava Valley, Jordan Rift Valley",
+    "description": "The great rift valley extending from the Sea of Galilee to the Gulf of Aqaba.",
+    "searchTerms": ["arabah", "aravah", "rift", "valley", "jordan"]
+  },
+  "hill-country-canaan": {
+    "id": "hill-country-canaan",
+    "name": "Hill Country of Canaan",
+    "altNames": ["Hill Country of the Amorites", "Central Highlands"],
+    "type": "region",
+    "coords": [35.20, 31.80],
+    "modernName": "Central highlands of Israel/West Bank",
+    "description": "The mountainous interior of Canaan, inhabited by the Amorites, which Israel was commanded to conquer.",
+    "searchTerms": ["hill country", "amorites", "canaan", "highlands", "central"]
+  },
+  "negev": {
+    "id": "negev",
+    "name": "Negev",
+    "altNames": ["Negeb", "The South"],
+    "type": "desert",
+    "coords": [34.80, 31.00],
+    "modernName": "Negev Desert, southern Israel",
+    "description": "The arid region in the south of Canaan, part of the land promised to Israel.",
+    "searchTerms": ["negev", "negeb", "south", "desert", "southern"]
+  },
+  "coastal-plain": {
+    "id": "coastal-plain",
+    "name": "Coastal Plain",
+    "altNames": ["Shephelah", "Western Lowland", "Seacoast"],
+    "type": "region",
+    "coords": [34.60, 32.10],
+    "modernName": "Mediterranean coastal plain, Israel",
+    "description": "The low-lying region along the Mediterranean coast, part of the promised land described in Deuteronomy 1.",
+    "searchTerms": ["coastal", "plain", "shephelah", "lowland", "seacoast", "mediterranean"]
+  },
+  "lebanon": {
+    "id": "lebanon",
+    "name": "Lebanon",
+    "altNames": ["Mount Lebanon", "Levanon"],
+    "type": "region",
+    "coords": [35.85, 33.85],
+    "modernName": "Lebanon (Mount Lebanon range)",
+    "description": "The northern mountain range marking the extent of the promised land.",
+    "searchTerms": ["lebanon", "levanon", "northern", "mountains", "cedar"]
+  },
+  "euphrates-river": {
+    "id": "euphrates-river",
+    "name": "Euphrates River",
+    "altNames": ["The Great River", "Perath", "Frat"],
+    "type": "river",
+    "coords": [38.00, 35.90],
+    "modernName": "Euphrates River, Syria/Iraq border region",
+    "description": "The great river forming the northeastern boundary of the promised land as described by God to Moses.",
+    "searchTerms": ["euphrates", "great river", "perath", "frat", "boundary"]
+  },
+  "land-of-canaan": {
+    "id": "land-of-canaan",
+    "name": "Land of Canaan",
+    "altNames": ["Canaan", "Promised Land", "Land of the Canaanites"],
+    "type": "region",
+    "coords": [35.20, 31.90],
+    "modernName": "Israel/Palestine",
+    "description": "The land promised by God to the descendants of Abraham, which Israel was preparing to enter.",
+    "searchTerms": ["canaan", "promised land", "canaanites", "israel"]
+  },
+  "wilderness-of-paran": {
+    "id": "wilderness-of-paran",
+    "name": "Wilderness of Paran",
+    "altNames": ["Paran", "Desert of Paran"],
+    "type": "desert",
+    "coords": [34.20, 29.80],
+    "modernName": "Central Sinai Peninsula, Egypt",
+    "description": "A large desert region in the Sinai Peninsula through which Israel traveled from Sinai to Kadesh-barnea.",
+    "searchTerms": ["paran", "wilderness", "desert", "sinai"]
+  },
+  "valley-of-eshcol": {
+    "id": "valley-of-eshcol",
+    "name": "Valley of Eshcol",
+    "altNames": ["Eshcol", "Wadi Eshcol", "Nahal Eshkol"],
+    "type": "valley",
+    "coords": [35.10, 31.53],
+    "modernName": "Valley near Hebron, West Bank",
+    "description": "The valley near Hebron where the spies cut a cluster of grapes as evidence of the land's fertility.",
+    "searchTerms": ["eshcol", "eshkol", "valley", "grapes", "spies", "hebron"]
+  },
+  "hill-country-kadesh": {
+    "id": "hill-country-kadesh",
+    "name": "Hill Country near Kadesh",
+    "altNames": ["Hill Country of the Amorites near Kadesh"],
+    "type": "region",
+    "coords": [34.50, 31.00],
+    "modernName": "Hill region near Kadesh-barnea, northeastern Sinai",
+    "description": "The hilly terrain near Kadesh-barnea where the Israelites were defeated after disobeying God's command.",
+    "searchTerms": ["hill country", "kadesh", "amorites", "defeat"]
+  },
+  "hormah": {
+    "id": "hormah",
+    "name": "Hormah",
+    "altNames": ["Zephath", "Tel Masos"],
+    "type": "settlement",
+    "coords": [34.95, 31.25],
+    "modernName": "Tel Masos area, Negev, Israel",
+    "description": "A settlement in the Negev where the Israelites were pursued and defeated by the Amorites after their disobedient attempt to enter Canaan.",
+    "searchTerms": ["hormah", "zephath", "tel masos", "defeat", "amorites"]
+  },
+  "seir-edom": {
+    "id": "seir-edom",
+    "name": "Seir (Edom)",
+    "altNames": ["Edom", "Land of Esau"],
+    "type": "region",
+    "coords": [35.40, 30.50],
+    "modernName": "Southern Jordan (Edom region)",
+    "description": "The region south of the Dead Sea belonging to the descendants of Esau, through which Israel traveled.",
+    "searchTerms": ["seir", "edom", "esau", "southern jordan"]
+  },
+  "edrei": {
+    "id": "edrei",
+    "name": "Edrei",
+    "altNames": ["Daraa", "Adraa", "Der'a"],
+    "type": "settlement",
+    "coords": [36.10, 32.62],
+    "modernName": "Daraa, Syria",
+    "description": "A city in Bashan where Israel defeated Og, king of Bashan, as referenced in the introduction to Deuteronomy.",
+    "searchTerms": ["edrei", "daraa", "og", "bashan", "dera"]
+  },
+  "hill-country-hebron": {
+    "id": "hill-country-hebron",
+    "name": "Hill Country near Hebron",
+    "altNames": ["Hebron hills", "Valley of Eshcol area"],
+    "type": "region",
+    "coords": [35.10, 31.53],
+    "modernName": "Hebron Hills, West Bank",
+    "description": "The hill country near Hebron where the spies explored the land of Canaan.",
+    "searchTerms": ["hebron", "hill country", "eshcol", "spies"]
+  },
+  "wilderness-red-sea": {
+    "id": "wilderness-red-sea",
+    "name": "Wilderness toward the Red Sea",
+    "altNames": ["Way of the Red Sea"],
+    "type": "desert",
+    "coords": [34.80, 29.50],
+    "modernName": "Eastern Sinai Peninsula",
+    "description": "The wilderness route leading toward the Red Sea (Gulf of Aqaba), where Israel wandered after the rebellion at Kadesh-barnea.",
+    "searchTerms": ["red sea", "wilderness", "wandering", "aqaba"]
+  },
+  "amorite-territory": {
+    "id": "amorite-territory",
+    "name": "Amorite Territory",
+    "altNames": ["Land of the Amorites", "Amorite hill country"],
+    "type": "region",
+    "coords": [34.70, 31.20],
+    "modernName": "Southern Judean Hills",
+    "description": "The hill country inhabited by the Amorites, where Israel was defeated after disobeying God at Kadesh-barnea.",
+    "searchTerms": ["amorite", "amorites", "hill country"]
+  }
+}

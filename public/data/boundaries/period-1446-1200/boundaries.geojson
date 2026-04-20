@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "egypt-new-kingdom",
+        "name": "Egypt (New Kingdom)",
+        "type": "empire",
+        "fillColor": "#D4A574",
+        "strokeColor": "#8B6914",
+        "labelCoords": [31.5, 30.0]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [29.8, 31.6], [31.5, 31.8], [32.5, 31.4], [34.0, 31.3],
+          [34.5, 31.0], [34.2, 30.5], [33.5, 29.0], [33.0, 28.0],
+          [31.0, 28.0], [30.0, 29.0], [29.5, 30.5], [29.8, 31.6]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "canaan",
+        "name": "Canaan",
+        "type": "region",
+        "fillColor": "#90EE90",
+        "strokeColor": "#228B22",
+        "labelCoords": [35.0, 32.2]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.2, 31.2], [34.4, 31.5], [34.5, 32.0], [34.7, 32.5],
+          [34.9, 33.0], [35.2, 33.4], [35.6, 33.3], [35.7, 32.8],
+          [35.6, 32.2], [35.5, 31.5], [35.3, 31.2], [34.8, 31.0],
+          [34.2, 31.2]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "moab",
+        "name": "Moab",
+        "type": "kingdom",
+        "fillColor": "#DEB887",
+        "strokeColor": "#8B7355",
+        "labelCoords": [35.8, 31.4]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [35.4, 31.0], [35.4, 31.3], [35.5, 31.6], [35.5, 31.85],
+          [35.8, 31.85], [36.1, 31.7], [36.1, 31.2], [35.9, 31.0],
+          [35.4, 31.0]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "edom-seir",
+        "name": "Edom (Seir)",
+        "type": "kingdom",
+        "fillColor": "#CD853F",
+        "strokeColor": "#8B5A2B",
+        "labelCoords": [35.4, 30.2]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.9, 29.5], [35.0, 30.0], [35.2, 30.5], [35.4, 30.85],
+          [35.9, 31.0], [36.0, 30.5], [35.8, 29.8], [35.5, 29.5],
+          [34.9, 29.5]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ammon",
+        "name": "Ammon",
+        "type": "kingdom",
+        "fillColor": "#F0E68C",
+        "strokeColor": "#BDB76B",
+        "labelCoords": [36.0, 31.9]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [35.7, 31.5], [35.6, 31.8], [35.6, 32.1], [35.8, 32.3],
+          [36.2, 32.3], [36.5, 32.0], [36.3, 31.6], [35.9, 31.5],
+          [35.7, 31.5]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bashan",
+        "name": "Bashan",
+        "type": "region",
+        "fillColor": "#98FB98",
+        "strokeColor": "#3CB371",
+        "labelCoords": [36.0, 32.8]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [35.5, 32.4], [35.5, 32.8], [35.7, 33.2], [36.0, 33.4],
+          [36.5, 33.3], [36.7, 32.9], [36.5, 32.5], [36.0, 32.3],
+          [35.5, 32.4]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "amorite-territory",
+        "name": "Amorite Territory",
+        "type": "region",
+        "fillColor": "#DDA0DD",
+        "strokeColor": "#8B668B",
+        "labelCoords": [35.2, 31.6]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.8, 31.2], [35.0, 31.5], [35.1, 31.8], [35.2, 32.0],
+          [35.5, 32.1], [35.6, 31.8], [35.5, 31.5], [35.3, 31.2],
+          [34.8, 31.2]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "midian",
+        "name": "Midian",
+        "type": "region",
+        "fillColor": "#F4A460",
+        "strokeColor": "#8B6508",
+        "labelCoords": [35.5, 28.8]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.5, 28.0], [34.8, 28.8], [35.2, 29.3], [35.8, 29.5],
+          [36.5, 29.3], [36.5, 28.5], [36.0, 28.0], [35.2, 27.8],
+          [34.5, 28.0]
+        ]]
+      }
+    }
+  ]
+}

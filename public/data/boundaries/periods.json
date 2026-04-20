@@ -1,0 +1,85 @@
+{
+  "periods": [
+    {
+      "id": "patriarchs",
+      "name": "Patriarchal Period",
+      "startYear": -2100,
+      "endYear": -1800,
+      "folder": "period-2100-1800",
+      "description": "Abraham, Isaac, Jacob",
+      "color": "#8B6914"
+    },
+    {
+      "id": "exodus-conquest",
+      "name": "Exodus & Conquest",
+      "startYear": -1446,
+      "endYear": -1200,
+      "folder": "period-1446-1200",
+      "description": "Moses, Joshua, entry into Canaan",
+      "color": "#B8860B"
+    },
+    {
+      "id": "judges",
+      "name": "Period of Judges",
+      "startYear": -1200,
+      "endYear": -1050,
+      "folder": "period-1200-1050",
+      "description": "Tribal confederation, judges rule",
+      "color": "#CD853F"
+    },
+    {
+      "id": "united-kingdom",
+      "name": "United Kingdom",
+      "startYear": -1050,
+      "endYear": -930,
+      "folder": "period-1050-0930",
+      "description": "Saul, David, Solomon",
+      "color": "#DAA520"
+    },
+    {
+      "id": "divided-kingdom",
+      "name": "Divided Kingdom",
+      "startYear": -930,
+      "endYear": -586,
+      "folder": "period-0930-0586",
+      "description": "Israel & Judah as separate kingdoms",
+      "color": "#B8860B"
+    },
+    {
+      "id": "exile",
+      "name": "Babylonian Exile",
+      "startYear": -586,
+      "endYear": -538,
+      "folder": "period-0586-0538",
+      "description": "Destruction of Jerusalem, exile in Babylon",
+      "color": "#8B4513"
+    },
+    {
+      "id": "persian",
+      "name": "Persian Period",
+      "startYear": -538,
+      "endYear": -332,
+      "folder": "period-0538-0332",
+      "description": "Return from exile, rebuilding",
+      "color": "#A0522D"
+    },
+    {
+      "id": "intertestamental",
+      "name": "Hellenistic Period",
+      "startYear": -332,
+      "endYear": -63,
+      "folder": "period-0332-0063",
+      "description": "Greek and Hasmonean periods",
+      "color": "#6B8E23"
+    },
+    {
+      "id": "roman-nt",
+      "name": "Roman / New Testament",
+      "startYear": -63,
+      "endYear": 100,
+      "folder": "period-0063bc-0100ad",
+      "description": "Roman occupation, life of Christ, early church",
+      "color": "#8B0000"
+    }
+  ]
+}
