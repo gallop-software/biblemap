@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 import { Source, Layer } from 'react-map-gl/maplibre';
 import type { LineLayerSpecification, CircleLayerSpecification } from 'maplibre-gl';
 import type { RouteAnimationState } from '../../hooks/use-route-animation';
@@ -52,52 +52,41 @@ const waypointStyle: CircleLayerSpecification = {
 };
 
 export function RouteLayer({ animationState, fullRouteCoords }: RouteLayerProps) {
-  const [drawnGeoJSON, setDrawnGeoJSON] = useState<GeoJSON.FeatureCollection | null>(null);
-  const [fullGeoJSON, setFullGeoJSON] = useState<GeoJSON.FeatureCollection | null>(null);
-  const [waypointGeoJSON, setWaypointGeoJSON] = useState<GeoJSON.FeatureCollection | null>(null);
-
-  useEffect(() => {
-    if (!fullRouteCoords || fullRouteCoords.length < 2) {
-      setFullGeoJSON(null);
-      setWaypointGeoJSON(null);
-      setDrawnGeoJSON(null);
-      return;
-    }
-
-    setFullGeoJSON({
+  const fullGeoJSON = useMemo<GeoJSON.FeatureCollection | null>(() => {
+    if (!fullRouteCoords || fullRouteCoords.length < 2) return null;
+    return {
       type: 'FeatureCollection',
       features: [{
         type: 'Feature',
         properties: {},
         geometry: { type: 'LineString', coordinates: fullRouteCoords },
       }],
-    });
+    };
+  }, [fullRouteCoords]);
 
-    setWaypointGeoJSON({
+  const waypointGeoJSON = useMemo<GeoJSON.FeatureCollection | null>(() => {
+    if (!fullRouteCoords || fullRouteCoords.length < 2) return null;
+    return {
       type: 'FeatureCollection',
       features: fullRouteCoords.map(coord => ({
         type: 'Feature' as const,
         properties: {},
         geometry: { type: 'Point' as const, coordinates: coord },
       })),
-    });
+    };
   }, [fullRouteCoords]);
 
-  useEffect(() => {
-    if (!animationState || animationState.points.length < 2) {
-      if (!fullRouteCoords) setDrawnGeoJSON(null);
-      return;
-    }
-
-    setDrawnGeoJSON({
+  const drawnGeoJSON = useMemo<GeoJSON.FeatureCollection | null>(() => {
+    if (!animationState || animationState.points.length < 2) return null;
+    return {
       type: 'FeatureCollection',
       features: [{
         type: 'Feature',
         properties: {},
         geometry: { type: 'LineString', coordinates: animationState.points },
       }],
-    });
-  }, [animationState, fullRouteCoords]);
+    };
+  }, [animationState]);
 
   if (!fullGeoJSON) return null;
 

@@ -7,7 +7,8 @@ import { useUIStore } from '../../stores/ui-store';
 import { useVerseStore } from '../../stores/verse-store';
 import { useMapStore } from '../../stores/map-store';
 import { usePlaces } from '../../hooks/use-places';
-import { useRouteAnimation, type RouteAnimationState } from '../../hooks/use-route-animation';
+import { useRouteAnimation } from '../../hooks/use-route-animation';
+import type { RouteAnimationState } from '../../hooks/use-route-animation';
 import { usePeriodStore } from '../../stores/period-store';
 import { useSearchStore } from '../../stores/search-store';
 import { BOOK_BY_ID } from '../../data/book-metadata';
@@ -28,7 +29,7 @@ export function AppShell() {
   const periods = usePeriodStore(s => s.periods);
   const initSearch = useSearchStore(s => s.initSearch);
 
-  const { animate, cancel } = useRouteAnimation();
+  const { animate, cancel, stateRef: animStateRef } = useRouteAnimation();
   const [routeAnimState, setRouteAnimState] = useState<RouteAnimationState | null>(null);
   const [fullRouteCoords, setFullRouteCoords] = useState<[number, number][] | null>(null);
   const prevLocationRef = useRef<string | null>(null);
@@ -47,7 +48,7 @@ export function AppShell() {
     if (book && periods.length > 0) {
       setYearAndLoad(book.dateRange.start);
     }
-  }, [currentBook, currentChapter, currentVerse, periods, setYearAndLoad]);
+  }, [currentBook, periods, setYearAndLoad]);
 
   useEffect(() => {
     if (!currentLocation || !places) return;
@@ -126,7 +127,7 @@ export function AppShell() {
           break;
         case ' ':
           e.preventDefault();
-          if (routeAnimState?.isAnimating) {
+          if (animStateRef.current.isAnimating) {
             cancel();
             setRouteAnimState(null);
           }
@@ -135,7 +136,7 @@ export function AppShell() {
     }
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [routeAnimState, cancel]);
+  }, [cancel, animStateRef]);
 
   return (
     <div className="flex flex-col h-[100dvh] w-screen bg-gray-950">

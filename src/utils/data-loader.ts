@@ -23,9 +23,13 @@ export async function loadVerseLocations(bookId: string): Promise<VerseLocation[
   return locations;
 }
 
+let placesPromise: Promise<PlaceCatalog> | null = null;
+
 export async function loadPlaces(): Promise<PlaceCatalog> {
-  const response = await fetch('/data/places/places.json');
-  return response.json();
+  if (!placesPromise) {
+    placesPromise = fetch('/data/places/places.json').then(r => r.json());
+  }
+  return placesPromise;
 }
 
 export async function loadBibleText(bookId: string): Promise<Record<string, Record<string, string>>> {
@@ -39,10 +43,14 @@ export async function loadBibleText(bookId: string): Promise<Record<string, Reco
   return chapters;
 }
 
+let periodsCache: HistoricalPeriod[] | null = null;
+
 export async function loadPeriods(): Promise<HistoricalPeriod[]> {
+  if (periodsCache) return periodsCache;
   const response = await fetch('/data/boundaries/periods.json');
   const data = await response.json();
-  return data.periods as HistoricalPeriod[];
+  periodsCache = data.periods as HistoricalPeriod[];
+  return periodsCache;
 }
 
 export async function loadBoundaries(folder: string): Promise<GeoJSON.FeatureCollection | null> {

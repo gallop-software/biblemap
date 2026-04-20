@@ -12,7 +12,7 @@ import type { RouteAnimationState } from '../../hooks/use-route-animation';
 const MAP_STYLE: StyleSpecification = {
   version: 8,
   name: 'BibleMap Satellite',
-  glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+  glyphs: 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf',
   sources: {
     'satellite': {
       type: 'raster',

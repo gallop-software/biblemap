@@ -30,8 +30,9 @@ export const usePeriodStore = create<PeriodState>((set, get) => ({
   },
 
   setYearAndLoad: async (year: number) => {
-    const { periods, activePeriod } = get();
+    const { periods, activePeriod, activeYear } = get();
     if (periods.length === 0) return;
+    if (year === activeYear) return;
 
     const resolved = resolvePeriodForYear(periods, year);
 
