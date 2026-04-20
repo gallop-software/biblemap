@@ -87,8 +87,11 @@ export function MapContainer({ routeAnimationState, fullRouteCoords }: MapContai
         mapStyle={MAP_STYLE}
         maxPitch={85}
         attributionControl={false}
+        dragRotate={false}
+        touchZoomRotate={true}
+        touchPitch={false}
       >
-        <NavigationControl position="top-right" />
+        <NavigationControl position="top-right" showCompass={false} />
         <ScaleControl position="bottom-right" />
         <BoundaryLayer />
         <CitiesLayer />
