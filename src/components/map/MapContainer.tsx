@@ -86,7 +86,6 @@ export function MapContainer({ routeAnimationState, fullRouteCoords }: MapContai
         style={{ width: '100%', height: '100%' }}
         mapStyle={MAP_STYLE}
         maxPitch={85}
-        antialias
       >
         <NavigationControl position="top-right" />
         <ScaleControl position="bottom-right" />
