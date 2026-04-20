@@ -116,8 +116,7 @@ export function useRouteAnimation() {
       }
 
       const elapsed = now - startTime - totalPauseTime;
-      const t = Math.min(elapsed / duration, 1);
-      const progress = t * t * (3 - 2 * t);
+      const progress = Math.min(elapsed / duration, 1);
 
       const currentPoint = along(line, progress * totalDistance, { units: 'kilometers' });
       const currentCoords = currentPoint.geometry.coordinates as [number, number];
@@ -149,15 +148,11 @@ export function useRouteAnimation() {
       stateRef.current.points = drawnPoints;
       stateRef.current.progress = progress;
 
-      mapRef.easeTo({
-        center: currentCoords,
-        duration: 200,
-        easing: (x: number) => x,
-      });
+      mapRef.jumpTo({ center: currentCoords });
 
       onUpdateRef.current?.(stateRef.current);
 
-      if (t >= 1) {
+      if (progress >= 1) {
         stateRef.current.isAnimating = false;
         stateRef.current.points = coords;
         onUpdateRef.current?.(stateRef.current);
