@@ -1,0 +1,140 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2332, 31.7767] },
+      "properties": { "id": "jerusalem", "name": "Jerusalem", "importance": "capital", "placeId": "jerusalem" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.28, 32.21] },
+      "properties": { "id": "samaria", "name": "Samaria", "importance": "capital", "placeId": "samaria" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [43.15, 36.36] },
+      "properties": { "id": "nineveh", "name": "Nineveh", "importance": "capital", "placeId": "nineveh" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.32, 33.51] },
+      "properties": { "id": "damascus", "name": "Damascus", "importance": "capital", "placeId": "damascus" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.25, 29.85] },
+      "properties": { "id": "memphis", "name": "Memphis", "importance": "capital", "placeId": "memphis" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.10, 31.53] },
+      "properties": { "id": "hebron", "name": "Hebron", "importance": "major", "placeId": "hebron" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.85, 31.56] },
+      "properties": { "id": "lachish", "name": "Lachish", "importance": "major", "placeId": "lachish" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.79, 31.24] },
+      "properties": { "id": "beer-sheba", "name": "Beer-sheba", "importance": "major", "placeId": "beer-sheba" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.47, 31.50] },
+      "properties": { "id": "gaza", "name": "Gaza", "importance": "major", "placeId": "gaza" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.55, 31.80] },
+      "properties": { "id": "ashdod", "name": "Ashdod", "importance": "major", "placeId": "ashdod" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.39, 31.67] },
+      "properties": { "id": "ashkelon", "name": "Ashkelon", "importance": "major", "placeId": "ashkelon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.86, 31.78] },
+      "properties": { "id": "ekron", "name": "Ekron", "importance": "major", "placeId": "ekron" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.19, 33.27] },
+      "properties": { "id": "tyre", "name": "Tyre", "importance": "major", "placeId": "tyre" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.37, 33.56] },
+      "properties": { "id": "sidon", "name": "Sidon", "importance": "major", "placeId": "sidon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.18, 32.58] },
+      "properties": { "id": "megiddo", "name": "Megiddo", "importance": "major", "placeId": "megiddo" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.57, 33.02] },
+      "properties": { "id": "hazor", "name": "Hazor", "importance": "major", "placeId": "hazor" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.50, 32.50] },
+      "properties": { "id": "beth-shean", "name": "Beth-shean", "importance": "minor", "placeId": "beth-shean" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.44, 31.87] },
+      "properties": { "id": "jericho", "name": "Jericho", "importance": "minor", "placeId": "jericho" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.23, 31.93] },
+      "properties": { "id": "bethel", "name": "Bethel", "importance": "minor", "placeId": "bethel" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.65, 33.25] },
+      "properties": { "id": "dan", "name": "Dan", "importance": "minor", "placeId": "dan" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.93, 31.95] },
+      "properties": { "id": "rabbah", "name": "Rabbah (Ammon)", "importance": "minor", "placeId": "rabbah" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.78, 31.50] },
+      "properties": { "id": "dibon", "name": "Dibon", "importance": "minor", "placeId": "dibon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.62, 30.73] },
+      "properties": { "id": "bozrah", "name": "Bozrah (Edom)", "importance": "minor", "placeId": "bozrah" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.92, 31.87] },
+      "properties": { "id": "gezer", "name": "Gezer", "importance": "minor", "placeId": "gezer" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.29, 32.06] },
+      "properties": { "id": "shiloh", "name": "Shiloh", "importance": "minor", "placeId": "shiloh" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.80, 31.80] },
+      "properties": { "id": "heshbon", "name": "Heshbon", "importance": "minor", "placeId": "heshbon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.13, 31.28] },
+      "properties": { "id": "arad", "name": "Arad", "importance": "minor", "placeId": "arad" }
+    }
+  ]
+}

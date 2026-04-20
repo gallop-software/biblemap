@@ -208,5 +208,45 @@
     "modernName": "Southern Judean Hills",
     "description": "The hill country inhabited by the Amorites, where Israel was defeated after disobeying God at Kadesh-barnea.",
     "searchTerms": ["amorite", "amorites", "hill country"]
+  },
+  "jerusalem": {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "altNames": ["Zion", "City of David", "Salem", "Jebus", "The Holy City"],
+    "type": "settlement",
+    "coords": [35.2332, 31.7767],
+    "modernName": "Jerusalem, Israel",
+    "description": "The capital city of the kingdom of Judah, site of Solomon's Temple, and the spiritual center of Israel. Called the 'strong city' in Isaiah's song of praise.",
+    "searchTerms": ["jerusalem", "zion", "city of david", "salem", "jebus", "holy city", "temple"]
+  },
+  "land-of-judah": {
+    "id": "land-of-judah",
+    "name": "Land of Judah",
+    "altNames": ["Judah", "Kingdom of Judah", "Judea"],
+    "type": "region",
+    "coords": [35.10, 31.50],
+    "modernName": "Southern Israel and West Bank",
+    "description": "The territory of the tribe and kingdom of Judah, stretching from the Negev to just north of Jerusalem, including the hill country, the Shephelah, and the wilderness.",
+    "searchTerms": ["judah", "judea", "kingdom", "southern kingdom"]
+  },
+  "dibon-moab": {
+    "id": "dibon-moab",
+    "name": "Dibon",
+    "altNames": ["Dibon-gad", "Dhiban"],
+    "type": "settlement",
+    "coords": [35.77, 31.50],
+    "modernName": "Dhiban, Jordan",
+    "description": "The capital city of Moab, east of the Dead Sea. In Isaiah's prophecy, Moab represents the 'lofty city' that God brings low in contrast to Jerusalem, the 'strong city' of his people.",
+    "searchTerms": ["dibon", "moab", "dhiban", "lofty city"]
+  },
+  "nineveh": {
+    "id": "nineveh",
+    "name": "Nineveh",
+    "altNames": ["Ninua", "Kouyunjik"],
+    "type": "settlement",
+    "coords": [43.15, 36.36],
+    "modernName": "Ruins near Mosul, Iraq",
+    "description": "The great capital of the Assyrian Empire on the Tigris River. Assyria was the dominant foreign power during Isaiah's ministry, and the 'other lords' who had dominion over Israel.",
+    "searchTerms": ["nineveh", "assyria", "mosul", "tigris", "ninua"]
   }
 }
