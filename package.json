@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:boundaries": "node scripts/generate-millennial-boundaries.mjs"
+    "generate:boundaries": "node scripts/generate-millennial-boundaries.mjs",
+    "generate:divided-kingdom": "node scripts/generate-divided-kingdom-boundaries.mjs"
   },
   "dependencies": {
     "@turf/along": "^7.3.5",
