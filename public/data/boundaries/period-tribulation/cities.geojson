@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.42, 32.54] },
+      "properties": { "id": "babylon", "name": "Babylon", "importance": "capital", "placeId": "babylon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2332, 31.7767] },
+      "properties": { "id": "jerusalem", "name": "Jerusalem (trampled by nations)", "importance": "capital", "placeId": "jerusalem" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.37, 33.31] },
+      "properties": { "id": "baghdad", "name": "Baghdad", "importance": "major", "placeId": "baghdad" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [43.15, 36.36] },
+      "properties": { "id": "nineveh", "name": "Nineveh (ancient)", "importance": "major", "placeId": "nineveh" }
+    }
+  ]
+}

@@ -85,10 +85,19 @@
       "id": "times-of-gentiles",
       "name": "Times of the Gentiles",
       "startYear": 100,
-      "endYear": 2030,
+      "endYear": 2023,
       "folder": "period-gentiles",
       "description": "Jerusalem trampled by the nations until the times of the Gentiles are fulfilled (Luke 21:24)",
       "color": "#708090"
+    },
+    {
+      "id": "tribulation",
+      "name": "Tribulation",
+      "startYear": 2023,
+      "endYear": 2030,
+      "folder": "period-tribulation",
+      "description": "The seven-year tribulation: rise and fall of Mystery Babylon (Dan 9:27; Rev 6-19)",
+      "color": "#8B0000"
     },
     {
       "id": "millennial-kingdom",

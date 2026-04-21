@@ -248,5 +248,15 @@
     "modernName": "Ruins near Mosul, Iraq",
     "description": "The great capital of the Assyrian Empire on the Tigris River. Assyria was the dominant foreign power during Isaiah's ministry, and the 'other lords' who had dominion over Israel.",
     "searchTerms": ["nineveh", "assyria", "mosul", "tigris", "ninua"]
+  },
+  "babylon": {
+    "id": "babylon",
+    "name": "Babylon",
+    "altNames": ["Babel", "Shinar", "Mystery Babylon", "Babylon the Great"],
+    "type": "settlement",
+    "coords": [44.42, 32.54],
+    "modernName": "Hillah, Babil Governorate, Iraq",
+    "description": "The great city on the Euphrates, capital of Nebuchadnezzar's empire, and the prophetic 'Mystery Babylon' of Revelation 17-18 — the lofty city that God brings down to the dust.",
+    "searchTerms": ["babylon", "babel", "shinar", "mystery babylon", "euphrates", "chaldea", "babylonia", "nimrod"]
   }
 }

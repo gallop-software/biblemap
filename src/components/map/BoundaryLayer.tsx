@@ -37,7 +37,7 @@ const boundaryLabelStyle: SymbolLayerSpecification = {
     'text-ignore-placement': false,
   },
   paint: {
-    'text-color': ['get', 'strokeColor'],
+    'text-color': ['coalesce', ['get', 'textColor'], ['get', 'strokeColor']],
     'text-halo-color': 'rgba(0,0,0,0.7)',
     'text-halo-width': 1.5,
     'text-opacity': 0.85,
