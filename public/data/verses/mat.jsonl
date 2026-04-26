@@ -1,0 +1,7 @@
+{"ref":"mat.16.1-4","type":"point","placeId":"magadan","label":"Pharisees and Sadducees demand a sign at Magadan","zoom":11,"pitch":45}
+{"ref":"mat.16.5","type":"route","waypoints":[{"placeId":"magadan","label":"Magadan"},{"placeId":"bethsaida","label":"Bethsaida — 'the other side'"}],"label":"Disciples cross to the other side of the Sea of Galilee","zoom":11}
+{"ref":"mat.16.6-12","type":"point","placeId":"bethsaida","label":"On the other side: 'Beware of the leaven of the Pharisees'","zoom":12,"pitch":45}
+{"ref":"mat.16.13","type":"route","waypoints":[{"placeId":"bethsaida","label":"Bethsaida"},{"placeId":"caesarea-philippi","label":"Caesarea Philippi"}],"label":"Journey north to the coasts of Caesarea Philippi","zoom":10}
+{"ref":"mat.16.13-20","type":"point","placeId":"caesarea-philippi","label":"Caesarea Philippi: Peter's confession, 'Thou art the Christ'","zoom":12,"pitch":50}
+{"ref":"mat.16.21-23","type":"point","placeId":"caesarea-philippi","label":"Jesus foretells his death; rebukes Peter","zoom":12,"pitch":45}
+{"ref":"mat.16.24-28","type":"point","placeId":"caesarea-philippi","label":"'Take up his cross, and follow me' — promise of the kingdom","zoom":12,"pitch":50}

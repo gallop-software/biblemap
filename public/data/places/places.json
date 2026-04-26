@@ -258,5 +258,45 @@
     "modernName": "Hillah, Babil Governorate, Iraq",
     "description": "The great city on the Euphrates, capital of Nebuchadnezzar's empire, and the prophetic 'Mystery Babylon' of Revelation 17-18 — the lofty city that God brings down to the dust.",
     "searchTerms": ["babylon", "babel", "shinar", "mystery babylon", "euphrates", "chaldea", "babylonia", "nimrod"]
+  },
+  "caesarea-philippi": {
+    "id": "caesarea-philippi",
+    "name": "Caesarea Philippi",
+    "altNames": ["Banias", "Paneas", "Panias", "Neronias"],
+    "type": "settlement",
+    "coords": [35.6948, 33.2486],
+    "modernName": "Banias, Golan Heights",
+    "description": "A city at the southern foot of Mount Hermon, near the headwaters of the Jordan River. Built around a grotto sacred to the Greek god Pan, it was rebuilt by Herod Philip and named for Caesar. Here Peter confessed, 'Thou art the Christ, the Son of the living God,' and Jesus answered, 'Upon this rock I will build my church.'",
+    "searchTerms": ["caesarea philippi", "banias", "paneas", "panias", "hermon", "peter's confession", "rock", "church"]
+  },
+  "magadan": {
+    "id": "magadan",
+    "name": "Magadan",
+    "altNames": ["Magdala", "Dalmanutha", "Migdal"],
+    "type": "settlement",
+    "coords": [35.5167, 32.8267],
+    "modernName": "Migdal, northern Israel",
+    "description": "A fishing village on the western shore of the Sea of Galilee, the home region of Mary Magdalene. Jesus came here after feeding the four thousand (Matt 15:39) and was met by Pharisees and Sadducees seeking a sign from heaven.",
+    "searchTerms": ["magadan", "magdala", "dalmanutha", "migdal", "galilee", "mary magdalene"]
+  },
+  "sea-of-galilee": {
+    "id": "sea-of-galilee",
+    "name": "Sea of Galilee",
+    "altNames": ["Lake Tiberias", "Sea of Tiberias", "Lake of Gennesaret", "Lake Kinneret", "Chinnereth"],
+    "type": "region",
+    "coords": [35.58, 32.81],
+    "modernName": "Lake Kinneret, northern Israel",
+    "description": "A freshwater lake in the lowlands of Galilee, the setting for much of Jesus' ministry. The disciples crossed its waters with Jesus, who warned them aboard the boat to beware of the leaven of the Pharisees and Sadducees.",
+    "searchTerms": ["sea of galilee", "tiberias", "gennesaret", "kinneret", "chinnereth", "lake", "boat"]
+  },
+  "bethsaida": {
+    "id": "bethsaida",
+    "name": "Bethsaida",
+    "altNames": ["Bethsaida-Julias", "et-Tell"],
+    "type": "settlement",
+    "coords": [35.63, 32.91],
+    "modernName": "et-Tell / el-Araj, north of the Sea of Galilee",
+    "description": "A fishing village on the north shore of the Sea of Galilee, just east of where the Jordan enters the lake. Hometown of Peter, Andrew, and Philip. After the Pharisees demanded a sign at Magadan, Jesus and the disciples crossed back over to this 'other side' (Mark 8:22), and from here Jesus led them north to the coasts of Caesarea Philippi.",
+    "searchTerms": ["bethsaida", "julias", "et-tell", "peter", "andrew", "philip", "fishing"]
   }
 }

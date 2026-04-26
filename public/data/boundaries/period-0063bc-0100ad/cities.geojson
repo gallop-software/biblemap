@@ -1,0 +1,405 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2332,
+          31.7767
+        ]
+      },
+      "properties": {
+        "id": "jerusalem",
+        "name": "Jerusalem",
+        "importance": "capital",
+        "placeId": "jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.892,
+          32.5
+        ]
+      },
+      "properties": {
+        "id": "caesarea-maritima",
+        "name": "Caesarea Maritima",
+        "importance": "capital",
+        "placeId": "caesarea-maritima"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.532,
+          32.795
+        ]
+      },
+      "properties": {
+        "id": "tiberias",
+        "name": "Tiberias",
+        "importance": "capital",
+        "placeId": "tiberias"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6948,
+          33.2486
+        ]
+      },
+      "properties": {
+        "id": "caesarea-philippi",
+        "name": "Caesarea Philippi",
+        "importance": "capital",
+        "placeId": "caesarea-philippi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.3,
+          33.51
+        ]
+      },
+      "properties": {
+        "id": "damascus",
+        "name": "Damascus",
+        "importance": "capital",
+        "placeId": "damascus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "id": "petra",
+        "name": "Petra",
+        "importance": "capital",
+        "placeId": "petra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.161,
+          36.202
+        ]
+      },
+      "properties": {
+        "id": "antioch",
+        "name": "Antioch",
+        "importance": "capital",
+        "placeId": "antioch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.575,
+          32.88
+        ]
+      },
+      "properties": {
+        "id": "capernaum",
+        "name": "Capernaum",
+        "importance": "major",
+        "placeId": "capernaum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.303,
+          32.7
+        ]
+      },
+      "properties": {
+        "id": "nazareth",
+        "name": "Nazareth",
+        "importance": "major",
+        "placeId": "nazareth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2,
+          31.705
+        ]
+      },
+      "properties": {
+        "id": "bethlehem",
+        "name": "Bethlehem",
+        "importance": "major",
+        "placeId": "bethlehem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5167,
+          32.8267
+        ]
+      },
+      "properties": {
+        "id": "magadan",
+        "name": "Magadan",
+        "importance": "major",
+        "placeId": "magadan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.63,
+          32.91
+        ]
+      },
+      "properties": {
+        "id": "bethsaida",
+        "name": "Bethsaida",
+        "importance": "major",
+        "placeId": "bethsaida"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4445,
+          31.857
+        ]
+      },
+      "properties": {
+        "id": "jericho",
+        "name": "Jericho",
+        "importance": "major",
+        "placeId": "jericho"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19,
+          32.278
+        ]
+      },
+      "properties": {
+        "id": "samaria-sebaste",
+        "name": "Sebaste",
+        "importance": "major",
+        "placeId": "samaria-sebaste"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.281,
+          32.209
+        ]
+      },
+      "properties": {
+        "id": "sychar",
+        "name": "Sychar",
+        "importance": "major",
+        "placeId": "sychar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.195,
+          33.271
+        ]
+      },
+      "properties": {
+        "id": "tyre",
+        "name": "Tyre",
+        "importance": "major",
+        "placeId": "tyre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.375,
+          33.563
+        ]
+      },
+      "properties": {
+        "id": "sidon",
+        "name": "Sidon",
+        "importance": "major",
+        "placeId": "sidon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.675,
+          32.655
+        ]
+      },
+      "properties": {
+        "id": "gadara",
+        "name": "Gadara",
+        "importance": "major",
+        "placeId": "gadara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.619,
+          32.449
+        ]
+      },
+      "properties": {
+        "id": "pella",
+        "name": "Pella",
+        "importance": "major",
+        "placeId": "pella"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.891,
+          32.281
+        ]
+      },
+      "properties": {
+        "id": "jerash",
+        "name": "Gerasa",
+        "importance": "major",
+        "placeId": "gerasa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9333,
+          31.955
+        ]
+      },
+      "properties": {
+        "id": "philadelphia",
+        "name": "Philadelphia",
+        "importance": "major",
+        "placeId": "philadelphia-ammon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.75,
+          32.05
+        ]
+      },
+      "properties": {
+        "id": "joppa",
+        "name": "Joppa",
+        "importance": "major",
+        "placeId": "joppa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.466,
+          31.504
+        ]
+      },
+      "properties": {
+        "id": "gaza",
+        "name": "Gaza",
+        "importance": "major",
+        "placeId": "gaza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.339,
+          32.747
+        ]
+      },
+      "properties": {
+        "id": "cana",
+        "name": "Cana",
+        "importance": "minor",
+        "placeId": "cana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.345,
+          32.63
+        ]
+      },
+      "properties": {
+        "id": "nain",
+        "name": "Nain",
+        "importance": "minor",
+        "placeId": "nain"
+      }
+    }
+  ]
+}

@@ -11,7 +11,8 @@
     "generate:boundaries": "node scripts/generate-millennial-boundaries.mjs",
     "generate:divided-kingdom": "node scripts/generate-divided-kingdom-boundaries.mjs",
     "generate:gentiles": "node scripts/generate-gentiles-boundaries.mjs",
-    "generate:tribulation": "node scripts/generate-tribulation-boundaries.mjs"
+    "generate:tribulation": "node scripts/generate-tribulation-boundaries.mjs",
+    "generate:roman-nt": "node scripts/generate-roman-nt-boundaries.mjs"
   },
   "dependencies": {
     "@turf/along": "^7.3.5",
