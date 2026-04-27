@@ -14,7 +14,6 @@ export interface VerseLocationPoint {
   ref: string;
   type: 'point';
   placeId: string;
-  label: string;
   zoom?: number;
   pitch?: number;
   bearing?: number;
@@ -25,7 +24,6 @@ export interface VerseLocationRoute {
   ref: string;
   type: 'route';
   waypoints: RouteWaypoint[];
-  label: string;
   zoom?: number;
   periodId?: string;
 }
@@ -33,7 +31,6 @@ export interface VerseLocationRoute {
 export interface VerseLocationNull {
   ref: string;
   type: null;
-  label?: string;
 }
 
 export type VerseLocation = VerseLocationPoint | VerseLocationRoute | VerseLocationNull;

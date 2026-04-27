@@ -2,7 +2,6 @@ import { useRef, useCallback } from 'react';
 import Map, { type MapRef, NavigationControl, ScaleControl } from 'react-map-gl/maplibre';
 import { useMapStore } from '../../stores/map-store';
 import { LocationMarker } from './LocationMarker';
-import { MapOverlay } from './MapOverlay';
 import { RouteLayer } from './RouteLayer';
 import { BoundaryLayer } from './BoundaryLayer';
 import { CitiesLayer } from './CitiesLayer';
@@ -101,7 +100,6 @@ export function MapContainer({ routeAnimationState, fullRouteCoords }: MapContai
         />
         <LocationMarker />
       </Map>
-      <MapOverlay />
     </div>
   );
 }

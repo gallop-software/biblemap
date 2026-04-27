@@ -298,5 +298,25 @@
     "modernName": "et-Tell / el-Araj, north of the Sea of Galilee",
     "description": "A fishing village on the north shore of the Sea of Galilee, just east of where the Jordan enters the lake. Hometown of Peter, Andrew, and Philip. After the Pharisees demanded a sign at Magadan, Jesus and the disciples crossed back over to this 'other side' (Mark 8:22), and from here Jesus led them north to the coasts of Caesarea Philippi.",
     "searchTerms": ["bethsaida", "julias", "et-tell", "peter", "andrew", "philip", "fishing"]
+  },
+  "mount-hermon": {
+    "id": "mount-hermon",
+    "name": "Mount Hermon",
+    "altNames": ["Mount of Transfiguration", "Sirion", "Senir", "Jebel esh-Sheikh"],
+    "type": "mountain",
+    "coords": [35.857, 33.4163],
+    "modernName": "Jebel esh-Sheikh, Lebanon / Syria / Golan Heights border",
+    "description": "The highest mountain in the region (~2,814 m), snow-capped much of the year, rising just north of Caesarea Philippi. Six days after Peter's confession (Matt 16:13-20), Jesus took Peter, James, and John 'up into an high mountain apart' — traditionally identified with Hermon — where he was transfigured before them and Moses and Elijah appeared. At the foot of the mountain he healed the demon-possessed boy.",
+    "searchTerms": ["hermon", "transfiguration", "sirion", "senir", "jebel sheikh", "mount", "high mountain"]
+  },
+  "capernaum": {
+    "id": "capernaum",
+    "name": "Capernaum",
+    "altNames": ["Kefar Nahum", "Village of Nahum", "His Own City"],
+    "type": "settlement",
+    "coords": [35.575, 32.88],
+    "modernName": "Kfar Nahum, north shore of the Sea of Galilee",
+    "description": "A fishing town on the north-west shore of the Sea of Galilee that became Jesus' ministry headquarters after he left Nazareth (Matt 4:13). Home of Peter and Andrew; site of the synagogue where Jesus often taught and of the temple-tax episode where Peter found the coin in the fish's mouth (Matt 17:24-27).",
+    "searchTerms": ["capernaum", "kefar nahum", "kfar nahum", "peter", "synagogue", "ministry", "his own city"]
   }
 }
