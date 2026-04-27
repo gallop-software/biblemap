@@ -6,17 +6,20 @@ const cityCircleStyle: CircleLayerSpecification = {
   id: 'cities-circle',
   type: 'circle',
   source: 'cities',
+  filter: ['!=', ['get', 'importance'], 'water'],
   paint: {
     'circle-radius': [
       'match', ['get', 'importance'],
       'capital', 7,
       'major', 5,
+      'landmark', 4,
       3,
     ],
     'circle-color': [
       'match', ['get', 'importance'],
       'capital', '#FFD700',
       'major', '#FFA500',
+      'landmark', '#9FCFFF',
       '#D2B48C',
     ],
     'circle-stroke-color': '#000000',
@@ -35,6 +38,8 @@ const cityLabelStyle: SymbolLayerSpecification = {
       'match', ['get', 'importance'],
       'capital', 12,
       'major', 11,
+      'landmark', 11,
+      'water', 12,
       10,
     ],
     'text-font': ['Open Sans Bold'],
@@ -43,7 +48,12 @@ const cityLabelStyle: SymbolLayerSpecification = {
     'text-allow-overlap': false,
   },
   paint: {
-    'text-color': '#FFFFFF',
+    'text-color': [
+      'match', ['get', 'importance'],
+      'landmark', '#9FCFFF',
+      'water', '#9FCFFF',
+      '#FFFFFF',
+    ],
     'text-halo-color': 'rgba(0,0,0,0.8)',
     'text-halo-width': 1.2,
   },

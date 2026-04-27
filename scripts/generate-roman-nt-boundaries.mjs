@@ -365,6 +365,12 @@ const CITIES = [
   { id: 'gaza',       name: 'Gaza',       coords: [34.4660, 31.5040], importance: 'major', placeId: 'gaza' },
   { id: 'cana',       name: 'Cana',       coords: [35.3390, 32.7470], importance: 'minor', placeId: 'cana' },
   { id: 'nain',       name: 'Nain',       coords: [35.3450, 32.6300], importance: 'minor', placeId: 'nain' },
+
+  // Landmarks (mountains, etc.)
+  { id: 'mount-hermon', name: 'Mount Hermon', coords: [35.857, 33.4163], importance: 'landmark', placeId: 'mount-hermon' },
+
+  // Water features (label only, no dot)
+  { id: 'sea-of-galilee', name: 'Sea of Galilee', coords: [35.58, 32.81], importance: 'water', placeId: 'sea-of-galilee' },
 ];
 
 function buildCities() {

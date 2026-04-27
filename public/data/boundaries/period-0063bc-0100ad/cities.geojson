@@ -400,6 +400,38 @@
         "importance": "minor",
         "placeId": "nain"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.857,
+          33.4163
+        ]
+      },
+      "properties": {
+        "id": "mount-hermon",
+        "name": "Mount Hermon",
+        "importance": "landmark",
+        "placeId": "mount-hermon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.58,
+          32.81
+        ]
+      },
+      "properties": {
+        "id": "sea-of-galilee",
+        "name": "Sea of Galilee",
+        "importance": "water",
+        "placeId": "sea-of-galilee"
+      }
     }
   ]
 }
