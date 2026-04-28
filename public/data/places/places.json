@@ -318,5 +318,15 @@
     "modernName": "Kfar Nahum, north shore of the Sea of Galilee",
     "description": "A fishing town on the north-west shore of the Sea of Galilee that became Jesus' ministry headquarters after he left Nazareth (Matt 4:13). Home of Peter and Andrew; site of the synagogue where Jesus often taught and of the temple-tax episode where Peter found the coin in the fish's mouth (Matt 17:24-27).",
     "searchTerms": ["capernaum", "kefar nahum", "kfar nahum", "peter", "synagogue", "ministry", "his own city"]
+  },
+  "great-sea": {
+    "id": "great-sea",
+    "name": "The Great Sea",
+    "altNames": ["Mediterranean Sea", "Western Sea", "Sea of the Philistines"],
+    "type": "body-of-water",
+    "coords": [33.5, 33.5],
+    "modernName": "Eastern Mediterranean Sea",
+    "description": "The vast sea bordering the land of Israel to the west, called 'the great sea' in the Old Testament (Num 34:6; Josh 1:4). In Isaiah 27:1 the LORD slays 'the dragon that is in the sea' — leviathan, the symbol of chaos and the world-power set against God.",
+    "searchTerms": ["great sea", "mediterranean", "western sea", "sea of the philistines", "leviathan", "the sea"]
   }
 }
