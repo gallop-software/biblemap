@@ -328,5 +328,15 @@
     "modernName": "Eastern Mediterranean Sea",
     "description": "The vast sea bordering the land of Israel to the west, called 'the great sea' in the Old Testament (Num 34:6; Josh 1:4). In Isaiah 27:1 the LORD slays 'the dragon that is in the sea' — leviathan, the symbol of chaos and the world-power set against God.",
     "searchTerms": ["great sea", "mediterranean", "western sea", "sea of the philistines", "leviathan", "the sea"]
+  },
+  "wadi-el-arish": {
+    "id": "wadi-el-arish",
+    "name": "Brook of Egypt",
+    "altNames": ["Stream of Egypt", "Nahal Mitzrayim", "Wadi el-Arish", "Wadi al-Arish"],
+    "type": "river",
+    "coords": [33.80, 31.13],
+    "modernName": "Wadi el-Arish, northern Sinai (mouth at El-Arish, Egypt)",
+    "description": "The seasonal wadi crossing the northern Sinai, identified with the biblical 'stream of Egypt' / 'brook of Egypt' (Num 34:5; Josh 15:4; Isa 27:12). Its mouth at El-Arish on the Mediterranean coast marks the south-western boundary of the promised land — paired with the Euphrates as the two corners across which the LORD will gather Israel 'one by one.'",
+    "searchTerms": ["brook of egypt", "stream of egypt", "wadi el-arish", "wadi al-arish", "nahal mitzrayim", "el-arish", "southern border"]
   }
 }

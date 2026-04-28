@@ -16,5 +16,5 @@
 {"ref": "isa.27.2-6", "type": "point", "placeId": "land-of-judah", "zoom": 8, "pitch": 45, "periodId": "millennial-kingdom"}
 {"ref": "isa.27.7-9", "type": "point", "placeId": "jerusalem", "zoom": 11, "pitch": 50, "periodId": "millennial-kingdom"}
 {"ref": "isa.27.10-11", "type": "point", "placeId": "babylon", "zoom": 6, "pitch": 30, "periodId": "tribulation"}
-{"ref": "isa.27.12", "type": "route", "waypoints": [{"placeId": "euphrates-river", "label": "Channel of the River"}, {"placeId": "jerusalem", "label": "The Holy Mount"}], "zoom": 5, "periodId": "millennial-kingdom"}
+{"ref": "isa.27.12", "type": "route", "waypoints": [{"placeId": "euphrates-river", "label": "Channel of the River"}, {"placeId": "wadi-el-arish", "label": "Stream of Egypt"}], "zoom": 5, "periodId": "millennial-kingdom"}
 {"ref": "isa.27.13", "type": "point", "placeId": "jerusalem", "zoom": 9, "pitch": 55, "periodId": "millennial-kingdom"}
