@@ -18,3 +18,24 @@
 {"ref": "isa.27.10-11", "type": "point", "placeId": "babylon", "zoom": 6, "pitch": 30, "periodId": "tribulation"}
 {"ref": "isa.27.12", "type": "route", "waypoints": [{"placeId": "euphrates-river", "label": "Channel of the River"}, {"placeId": "wadi-el-arish", "label": "Stream of Egypt"}], "zoom": 5, "periodId": "millennial-kingdom"}
 {"ref": "isa.27.13", "type": "point", "placeId": "jerusalem", "zoom": 9, "pitch": 55, "periodId": "millennial-kingdom"}
+{"ref": "isa.28.1", "type": "point", "placeId": "samaria", "zoom": 12, "pitch": 55, "periodId": "divided-kingdom"}
+{"ref": "isa.28.2", "type": "point", "placeId": "samaria", "zoom": 9, "pitch": 40, "periodId": "divided-kingdom"}
+{"ref": "isa.28.3", "type": "point", "placeId": "samaria", "zoom": 13, "pitch": 60, "periodId": "divided-kingdom"}
+{"ref": "isa.28.4", "type": "point", "placeId": "samaria", "zoom": 12, "pitch": 50, "periodId": "divided-kingdom"}
+{"ref": "isa.28.5-6", "type": "point", "placeId": "jerusalem", "zoom": 12, "pitch": 50, "periodId": "millennial-kingdom"}
+{"ref": "isa.28.7-8", "type": "point", "placeId": "jerusalem", "zoom": 13, "pitch": 45, "periodId": "divided-kingdom"}
+{"ref": "isa.28.9-10", "type": "point", "placeId": "jerusalem", "zoom": 13, "periodId": "divided-kingdom"}
+{"ref": "isa.28.11", "type": "route", "waypoints": [{"placeId": "nineveh", "label": "Assyria (stammering lips)"}, {"placeId": "jerusalem", "label": "this people"}], "zoom": 5, "periodId": "divided-kingdom"}
+{"ref": "isa.28.12-13", "type": "point", "placeId": "jerusalem", "zoom": 12, "periodId": "divided-kingdom"}
+{"ref": "isa.28.14-15", "type": "point", "placeId": "jerusalem", "zoom": 13, "pitch": 50, "periodId": "divided-kingdom"}
+{"ref": "isa.28.16", "type": "point", "placeId": "jerusalem", "zoom": 15, "pitch": 60, "periodId": "roman-nt"}
+{"ref": "isa.28.17", "type": "point", "placeId": "jerusalem", "zoom": 12, "pitch": 45, "periodId": "divided-kingdom"}
+{"ref": "isa.28.18-19", "type": "point", "placeId": "jerusalem", "zoom": 11, "pitch": 40, "periodId": "divided-kingdom"}
+{"ref": "isa.28.20", "type": "point", "placeId": "jerusalem", "zoom": 13, "periodId": "divided-kingdom"}
+{"ref": "isa.28.21", "type": "route", "waypoints": [{"placeId": "mount-perazim", "label": "Mount Perazim"}, {"placeId": "valley-of-gibeon", "label": "Valley of Gibeon"}], "zoom": 10, "periodId": "divided-kingdom"}
+{"ref": "isa.28.22", "type": "point", "placeId": "jerusalem", "zoom": 12, "periodId": "divided-kingdom"}
+{"ref": "isa.28.23", "type": "point", "placeId": "land-of-judah", "zoom": 9, "periodId": "divided-kingdom"}
+{"ref": "isa.28.24-25", "type": "point", "placeId": "land-of-judah", "zoom": 10, "pitch": 45, "periodId": "divided-kingdom"}
+{"ref": "isa.28.26", "type": "point", "placeId": "land-of-judah", "zoom": 9, "periodId": "divided-kingdom"}
+{"ref": "isa.28.27-28", "type": "point", "placeId": "land-of-judah", "zoom": 10, "pitch": 45, "periodId": "divided-kingdom"}
+{"ref": "isa.28.29", "type": "point", "placeId": "land-of-judah", "zoom": 8, "pitch": 40, "periodId": "divided-kingdom"}

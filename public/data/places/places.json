@@ -338,5 +338,35 @@
     "modernName": "Wadi el-Arish, northern Sinai (mouth at El-Arish, Egypt)",
     "description": "The seasonal wadi crossing the northern Sinai, identified with the biblical 'stream of Egypt' / 'brook of Egypt' (Num 34:5; Josh 15:4; Isa 27:12). Its mouth at El-Arish on the Mediterranean coast marks the south-western boundary of the promised land — paired with the Euphrates as the two corners across which the LORD will gather Israel 'one by one.'",
     "searchTerms": ["brook of egypt", "stream of egypt", "wadi el-arish", "wadi al-arish", "nahal mitzrayim", "el-arish", "southern border"]
+  },
+  "samaria": {
+    "id": "samaria",
+    "name": "Samaria",
+    "altNames": ["Shomron", "Sebastia", "Ephraim (capital)", "Crown of Pride"],
+    "type": "settlement",
+    "coords": [35.1897, 32.2764],
+    "modernName": "Sebastia, West Bank",
+    "description": "The capital of the Northern Kingdom of Israel, built by Omri on a fortified hill rising above the fertile Jezreel and Shechem valleys (1 Kgs 16:24). In Isaiah 28:1-4 the prophet pictures it as 'the crown of pride' set 'on the head of the fat valleys' — a wreath of revelers about to be trampled. The city fell to Sargon II of Assyria in 722 BC.",
+    "searchTerms": ["samaria", "shomron", "sebastia", "ephraim", "northern kingdom", "crown of pride", "omri", "ahab", "fat valleys"]
+  },
+  "mount-perazim": {
+    "id": "mount-perazim",
+    "name": "Mount Perazim",
+    "altNames": ["Baal-perazim", "Mount of Breaches"],
+    "type": "mountain",
+    "coords": [35.17, 31.74],
+    "modernName": "Ridge near the Valley of Rephaim, southwest of Jerusalem",
+    "description": "The hill where the LORD 'broke forth' against the Philistines through David like a breach of waters, giving the place its name Baal-perazim (2 Sam 5:20; 1 Chr 14:11). In Isaiah 28:21 the prophet warns that the LORD will rise up against Judah as he once rose up here against her enemies — a 'strange work' of judgment against his own people.",
+    "searchTerms": ["mount perazim", "perazim", "baal-perazim", "breaches", "david", "philistines", "rephaim"]
+  },
+  "valley-of-gibeon": {
+    "id": "valley-of-gibeon",
+    "name": "Valley of Gibeon",
+    "altNames": ["Gibeon", "el-Jib", "Plain of Gibeon"],
+    "type": "valley",
+    "coords": [35.1856, 31.8467],
+    "modernName": "el-Jib, north of Jerusalem, West Bank",
+    "description": "The plain north of Jerusalem where Joshua defeated the five Amorite kings as the LORD cast down great hailstones from heaven and the sun stood still (Josh 10:10-14). In Isaiah 28:21 the prophet pairs Gibeon with Mount Perazim as the pattern of the LORD's 'strange act': once the storm-judgment fell on Israel's enemies, but now the same hand will fall on covenant-breaking Judah.",
+    "searchTerms": ["gibeon", "valley of gibeon", "el-jib", "joshua", "amorites", "hailstones", "sun stood still"]
   }
 }
